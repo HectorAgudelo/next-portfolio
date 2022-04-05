@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import { Container } from 'react-bootstrap';
 import styles from 'styled-components';
 import { device } from './DeviceScreens';
 import {
@@ -15,13 +16,13 @@ import {
 } from 'react-icons/si';
 
 const Image = styles.img`
-margin: 0px;
-height: 350px;
-width: auto;
+
+
+
 
 @media ${device.mobileS}{
   margin: 0px;
-  height: 350px;
+  height: 300px;
   width: auto;
 };
 
@@ -198,21 +199,20 @@ color: #393E41 !important;
 
 `;
 
-const Container = styles.div`
-margin: 0px 40px;
+const ContainerStyle = styles.div`
+
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content:center;
-gap: 10px;
-height: 100vh;
-width: auto;
+
+
 
 @media ${device.mobileS}{
   gap: 0px;
   margin: 0px 0px;
-  height: 183vh;
-  width: 125vmin;
+  height: 50%;
+  width: 100%;
 };
 
 
@@ -322,7 +322,7 @@ justify-content:center;
 };
 
 `;
-const SectionSkills = styles.section`
+const SectionSkills = styles.div`
 display: flex;
 flex-direction: ${(props) => props.flexDirection};
 align-items: ${(props) => props.alignItems};
@@ -335,7 +335,7 @@ justify-content: center;
   height: ${(props) => props.viewHeightMobileS};
   gap: ${(props) => props.gapMobileS};
 
-  width: 125vmin;
+  width: 100vw;
 };
 
 @media ${device.mobileM}{
@@ -472,92 +472,140 @@ color: #393E41 !important;
 
 const About = forwardRef((props, ref) => {
   return (
-    <Container ref={ref} {...props}>
-      <Section flexDirection='column' alignItems='center'>
-        <Title
-          titleAlign='center'
-          textShadow='2px 5px 0 rgba(0,0,0,0.2)'
-          marginDesktopL='0px 0px 40px 0px'
-          marginLaptopL='0px 0px 20px 0px'
-          marginLaptop='0px 0px 10px 0px'
-          marginTablet='0px 0px 5px 0px'
-          marginMobileL='0px 0px 5px 0px'
-          marginMobileM='0px 0px 5px 0px'
-          marginMobileS='0px 0px 5px 0px'
-          fontSizeDesktopL='80px'
-          fontSizeLaptopL='45px'
-          fontSizeLaptop='40px'
-          fontSizeTablet='35px'
-          fontSizeMobileL='35px'
-          fontSizeMobileM='30px'
-          fontSizeMobileS='25px'
-        >
-          About
-        </Title>
-        <Text
-          margin='0px 0px 20px 0px'
-          textAlign='center'
-          fontSizeDesktopL='35px'
-          fontSizeLaptopL='20px'
-          fontSizeLaptop='15px'
-          fontSizeTablet='15px'
-          fontSizeMobileL='15px'
-          paddingMobileL='10px'
-          paddingMobileM='10px'
-          paddingMobileS='10px'
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </Text>
-      </Section>
-      <Section
-        flexDirection='row'
-        flexDirectionMobileL='column'
-        flexDirectionMobileM='column'
-        flexDirectionMobileS='column'
-        alignItems='flex-start'
-        alignItemsMobileL='center'
-        alignItemsMobileM='center'
-        alignItemsMobileS='center'
-        margin='0px'
-        marginDesktopL='0px 400px'
-        marginLaptopL='0px 200px'
-        marginLaptop='0px 100px'
-        marginTablet='0px 50px'
-        marginMobileL='0px 50px'
-        marginMobileM='0px 50px'
-        marginMobileS='0px 50px'
-      >
-        <Image src='/Self.jpg' alt={'Myself'} />
-        <Section
-          flexDirection='column'
-          marginDesktopL='0px 40px'
-          marginLaptopL='0px 20px'
-          marginLaptop='0px 10px'
-          marginTablet='0px 5px'
-          marginMobileL='0px 5px'
-          marginMobileM='0px 5px'
-          marginMobileS='0px 5px'
-          alignItems='flex-start'
-        >
+    <Container  fluid style={{ padding: '0px' }} ref={ref} {...props}>
+      <ContainerStyle >
+        <Section flexDirection='column' alignItems='center'>
           <Title
-            titleAlign='left'
-            fontSize='25px'
-            fontSizeDesktopL='50px'
-            fontSizeLaptopL='30px'
-            fontSizeLaptop='20px'
-            fontSizeTablet='20px'
-            fontSizeMobileL='20px'
-            fontSizeMobileM='20px'
-            fontSizeMobileS='20px'
-            textShadow='none'
-            margin='0px 0px 10px 0px'
+            titleAlign='center'
+            textShadow='2px 5px 0 rgba(0,0,0,0.2)'
+            marginDesktopL='0px 0px 40px 0px'
+            marginLaptopL='0px 0px 20px 0px'
+            marginLaptop='0px 0px 10px 0px'
+            marginTablet='0px 0px 5px 0px'
+            marginMobileL='0px 0px 5px 0px'
+            marginMobileM='0px 0px 5px 0px'
+            marginMobileS='0px 0px 5px 0px'
+            fontSizeDesktopL='80px'
+            fontSizeLaptopL='45px'
+            fontSizeLaptop='40px'
+            fontSizeTablet='35px'
+            fontSizeMobileL='35px'
+            fontSizeMobileM='30px'
+            fontSizeMobileS='25px'
           >
-            Frontend Developer
+            About
           </Title>
           <Text
-            textAlign='left'
-            margin='0px 0px'
+            margin='0px 20px 20px 20px'
+            textAlign='center'
+            fontSizeDesktopL='35px'
+            fontSizeLaptopL='20px'
+            fontSizeLaptop='15px'
+            fontSizeTablet='15px'
+            fontSizeMobileL='15px'
+            paddingMobileL='10px'
+            paddingMobileM='10px'
+            paddingMobileS='10px'
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </Text>
+        </Section>
+        <Section
+          flexDirection='row'
+          flexDirectionMobileL='column'
+          flexDirectionMobileM='column'
+          flexDirectionMobileS='column'
+          alignItems='flex-start'
+          alignItemsMobileL='center'
+          alignItemsMobileM='center'
+          alignItemsMobileS='center'
+          margin='0px'
+          marginDesktopL='0px 400px'
+          marginLaptopL='0px 200px'
+          marginLaptop='0px 100px'
+          marginTablet='0px 50px'
+          marginMobileL='0px 50px'
+          marginMobileM='0px 50px'
+          marginMobileS='0px 50px'
+        >
+          <Image src='/Self.jpg' alt={'Myself'} />
+          <Section
+            flexDirection='column'
+            marginDesktopL='0px 40px'
+            marginLaptopL='0px 20px'
+            marginLaptop='0px 10px'
+            marginTablet='0px 5px'
+            marginMobileL='0px 5px'
+            marginMobileM='0px 5px'
+            marginMobileS='0px 5px'
+            alignItems='flex-start'
+          >
+            <Title
+              titleAlign='left'
+              fontSize='25px'
+              fontSizeDesktopL='50px'
+              fontSizeLaptopL='30px'
+              fontSizeLaptop='20px'
+              fontSizeTablet='20px'
+              fontSizeMobileL='20px'
+              fontSizeMobileM='20px'
+              fontSizeMobileS='20px'
+              textShadow='none'
+              margin='0px 0px 10px 0px'
+            >
+              Frontend Developer
+            </Title>
+            <Text
+              textAlign='left'
+              margin='0px 0px'
+              fontSizeDesktopL='35px'
+              fontSizeLaptopL='20px'
+              fontSizeLaptop='15px'
+              fontSizeTablet='15px'
+              fontSizeMobileL='15px'
+              fontSizeMobileM='15px'
+              fontSizeMobileS='15px'
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Integer enim neque volutpat ac. Nibh cras pulvinar mattis nunc sed
+              blandit libero. Nunc scelerisque viverra mauris in aliquam sem
+              fringilla ut. Faucibus ornare suspendisse sed nisi lacus sed
+              viverra. Porta nibh venenatis cras sed felis eget velit aliquet
+              sagittis. Urna molestie at elementum eu. Tempus quam pellentesque
+              nec nam aliquam sem et tortor. Consectetur a erat nam at lectus
+              urna duis. Nunc sed velit dignissim sodales. Cras pulvinar mattis
+              nunc sed blandit libero. Ipsum consequat nisl vel pretium lectus
+              quam. Pretium quam vulputate dignissim suspendisse in est. Donec
+              ac odio tempor orci dapibus ultrices in.
+            </Text>
+          </Section>
+        </Section>
+        <SectionSkills flexDirection='column' alignItems='center' gap='0px'>
+          <TitleSkills
+            titleAlign='center'
+            textShadow='2px 5px 0 rgba(0,0,0,0.2)'
+            marginDesktopL='0px 0px 40px 0px'
+            marginLaptopL='40px 0px 20px 0px'
+            marginLaptop='40px 0px 10px 0px'
+            marginTablet='40px 0px 5px 0px'
+            marginMobileL='40px 0px 5px 0px'
+            marginMobileM='40px 0px 5px 0px'
+            marginMobileS='40px 0px 5px 0px'
+            fontSizeDesktopL='80px'
+            fontSizeLaptopL='45px'
+            fontSizeLaptop='40px'
+            fontSizeTablet='35px'
+            fontSizeMobileL='35px'
+            fontSizeMobileM='30px'
+            fontSizeMobileS='25px'
+          >
+            Skills
+          </TitleSkills>
+          <TextSkills
+            margin='0px 10px 0px 10px'
+            textAlign='center'
             fontSizeDesktopL='35px'
             fontSizeLaptopL='20px'
             fontSizeLaptop='15px'
@@ -567,43 +615,13 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileS='15px'
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer
-            enim neque volutpat ac. Nibh cras pulvinar mattis nunc sed blandit
-            libero. Nunc scelerisque viverra mauris in aliquam sem fringilla ut.
-            Faucibus ornare suspendisse sed nisi lacus sed viverra. Porta nibh
-            venenatis cras sed felis eget velit aliquet sagittis. Urna molestie
-            at elementum eu. Tempus quam pellentesque nec nam aliquam sem et
-            tortor. Consectetur a erat nam at lectus urna duis. Nunc sed velit
-            dignissim sodales. Cras pulvinar mattis nunc sed blandit libero.
-            Ipsum consequat nisl vel pretium lectus quam. Pretium quam vulputate
-            dignissim suspendisse in est. Donec ac odio tempor orci dapibus
-            ultrices in.
-          </Text>
-        </Section>
-      </Section>
-      <SectionSkills flexDirection='column' alignItems='center' gap='0px'>
-        <TitleSkills
-          titleAlign='center'
-          textShadow='2px 5px 0 rgba(0,0,0,0.2)'
-          marginDesktopL='0px 0px 40px 0px'
-          marginLaptopL='40px 0px 20px 0px'
-          marginLaptop='40px 0px 10px 0px'
-          marginTablet='40px 0px 5px 0px'
-          marginMobileL='40px 0px 5px 0px'
-          marginMobileM='40px 0px 5px 0px'
-          marginMobileS='40px 0px 5px 0px'
-          fontSizeDesktopL='80px'
-          fontSizeLaptopL='45px'
-          fontSizeLaptop='40px'
-          fontSizeTablet='35px'
-          fontSizeMobileL='35px'
-          fontSizeMobileM='30px'
-          fontSizeMobileS='25px'
-        >
-          Skills
-        </TitleSkills>
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </TextSkills>
+        </SectionSkills>
         <TextSkills
-          margin='0px 0px 0px 0px'
+          margin='20px'
           textAlign='center'
           fontSizeDesktopL='35px'
           fontSizeLaptopL='20px'
@@ -613,268 +631,252 @@ const About = forwardRef((props, ref) => {
           fontSizeMobileM='15px'
           fontSizeMobileS='15px'
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+          <a
+            style={{
+              color: '#8a5c78',
+              textDecoration: 'none',
+              fontWeight: 'bold',
+            }}
+            href='https://docs.google.com/document/d/1-WiqkWGrUnhsf7YyjKerPKAkakKRrd5j/edit?usp=sharing&ouid=109866500808769579371&rtpof=true&sd=true'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            View My Resume
+          </a>
         </TextSkills>
-      </SectionSkills>
-      <TextSkills
-        margin='20px'
-        textAlign='center'
-        fontSizeDesktopL='35px'
-        fontSizeLaptopL='20px'
-        fontSizeLaptop='15px'
-        fontSizeTablet='15px'
-        fontSizeMobileL='15px'
-        fontSizeMobileM='15px'
-        fontSizeMobileS='15px'
-      >
-        <a
-          style={{
-            color: '#8a5c78',
-            textDecoration: 'none',
-            fontWeight: 'bold',
-          }}
-          href='https://docs.google.com/document/d/1-WiqkWGrUnhsf7YyjKerPKAkakKRrd5j/edit?usp=sharing&ouid=109866500808769579371&rtpof=true&sd=true'
-          target='_blank'
-          rel='noreferrer noopener'
-        >
-          View My Resume
-        </a>
-      </TextSkills>
-      <ContainerSkills
-        flexDirection='row'
-        alignItems='center'
-        gapDesktopL='60px'
-        gapLaptopL='30px'
-        gapLaptop='35px'
-        gapTablet='40px'
-        gapMobileL='30px'
-        gapMobileM='15px'
-        gapMobileS='15px'
-      >
         <ContainerSkills
-          flexDirection='column'
+          flexDirection='row'
           alignItems='center'
-          gap='0px'
-          fontSizeDesktopL='2em'
-          fontSizeLaptopL='1em'
-          fontSizeLaptop='0.9em'
-          fontSizeTablet='0.7em'
-          fontSizeMobileL='0.7em'
-          fontSizeMobileM='0.7em'
-          fontSizeMobileS='0.7em'
+          gapDesktopL='60px'
+          gapLaptopL='30px'
+          gapLaptop='35px'
+          gapTablet='40px'
+          gapMobileL='30px'
+          gapMobileM='15px'
+          gapMobileS='7px'
         >
-          <SiHtml5 className='icon' size={'3em'} />
-          <TextSkills
-            margin='0px 0px 0px 0px'
-            textAlign='center'
-            fontSizeDesktopL='25px'
-            fontSizeLaptop='15px'
+          <ContainerSkills
+            flexDirection='column'
+            alignItems='center'
+            gap='0px'
+            fontSizeDesktopL='2em'
+            fontSizeLaptopL='1em'
+            fontSizeLaptop='0.9em'
+            fontSizeTablet='0.7em'
+            fontSizeMobileL='0.7em'
+            fontSizeMobileM='0.7em'
+            fontSizeMobileS='0.7em'
           >
-            HTML
-          </TextSkills>
-        </ContainerSkills>
-        <ContainerSkills
-          flexDirection='column'
-          alignItems='center'
-          gap='0px'
-          fontSizeDesktopL='2em'
-          fontSizeLaptopL='1em'
-          fontSizeLaptop='0.9em'
-          fontSizeTablet='0.7em'
-          fontSizeMobileL='0.7em'
-          fontSizeMobileM='0.7em'
-          fontSizeMobileS='0.7em'
-        >
-          <SiCss3 className='icon' size={'3em'} />
-          <TextSkills
-            margin='0px 0px 0px 0px'
-            textAlign='center'
-            fontSizeDesktopL='25px'
-            fontSizeLaptop='15px'
+            <SiHtml5 className='icon' size={'3em'} />
+            <TextSkills
+              margin='0px 0px 0px 0px'
+              textAlign='center'
+              fontSizeDesktopL='25px'
+              fontSizeLaptop='15px'
+            >
+              HTML
+            </TextSkills>
+          </ContainerSkills>
+          <ContainerSkills
+            flexDirection='column'
+            alignItems='center'
+            gap='0px'
+            fontSizeDesktopL='2em'
+            fontSizeLaptopL='1em'
+            fontSizeLaptop='0.9em'
+            fontSizeTablet='0.7em'
+            fontSizeMobileL='0.7em'
+            fontSizeMobileM='0.7em'
+            fontSizeMobileS='0.7em'
           >
-            CSS
-          </TextSkills>
-        </ContainerSkills>
-        <ContainerSkills
-          flexDirection='column'
-          alignItems='center'
-          gap='0px'
-          fontSizeDesktopL='2em'
-          fontSizeLaptopL='1em'
-          fontSizeLaptop='0.9em'
-          fontSizeTablet='0.7em'
-          fontSizeMobileL='0.7em'
-          fontSizeMobileM='0.7em'
-          fontSizeMobileS='0.7em'
-        >
-          <SiJavascript className='icon' size={'3em'} />
-          <TextSkills
-            margin='0px 0px 0px 0px'
-            textAlign='center'
-            fontSizeDesktopL='25px'
-            fontSizeLaptop='15px'
+            <SiCss3 className='icon' size={'3em'} />
+            <TextSkills
+              margin='0px 0px 0px 0px'
+              textAlign='center'
+              fontSizeDesktopL='25px'
+              fontSizeLaptop='15px'
+            >
+              CSS
+            </TextSkills>
+          </ContainerSkills>
+          <ContainerSkills
+            flexDirection='column'
+            alignItems='center'
+            gap='0px'
+            fontSizeDesktopL='2em'
+            fontSizeLaptopL='1em'
+            fontSizeLaptop='0.9em'
+            fontSizeTablet='0.7em'
+            fontSizeMobileL='0.7em'
+            fontSizeMobileM='0.7em'
+            fontSizeMobileS='0.7em'
           >
-            JavaScript
-          </TextSkills>
-        </ContainerSkills>
-        <ContainerSkills
-          flexDirection='column'
-          alignItems='center'
-          gap='0px'
-          fontSizeDesktopL='2em'
-          fontSizeLaptopL='1em'
-          fontSizeLaptop='0.9em'
-          fontSizeTablet='0.7em'
-          fontSizeMobileL='0.7em'
-          fontSizeMobileM='0.7em'
-          fontSizeMobileS='0.7em'
-        >
-          <SiReact className='icon' size={'3em'} />
-          <TextSkills
-            margin='0px 0px 0px 0px'
-            textAlign='center'
-            fontSizeDesktopL='25px'
-            fontSizeLaptop='15px'
+            <SiJavascript className='icon' size={'3em'} />
+            <TextSkills
+              margin='0px 0px 0px 0px'
+              textAlign='center'
+              fontSizeDesktopL='25px'
+              fontSizeLaptop='15px'
+            >
+              JavaScript
+            </TextSkills>
+          </ContainerSkills>
+          <ContainerSkills
+            flexDirection='column'
+            alignItems='center'
+            gap='0px'
+            fontSizeDesktopL='2em'
+            fontSizeLaptopL='1em'
+            fontSizeLaptop='0.9em'
+            fontSizeTablet='0.7em'
+            fontSizeMobileL='0.7em'
+            fontSizeMobileM='0.7em'
+            fontSizeMobileS='0.7em'
           >
-            React
-          </TextSkills>
-        </ContainerSkills>
-        <ContainerSkills
-          flexDirection='column'
-          alignItems='center'
-          gap='0px'
-          fontSizeDesktopL='2em'
-          fontSizeLaptopL='1em'
-          fontSizeLaptop='0.9em'
-          fontSizeTablet='0.7em'
-          fontSizeMobileL='0.7em'
-          fontSizeMobileM='0.7em'
-          fontSizeMobileS='0.7em'
-        >
-          <SiBootstrap className='icon' size={'3em'} />
-          <TextSkills
-            margin='0px 0px 0px 0px'
-            textAlign='center'
-            fontSizeDesktopL='25px'
-            fontSizeLaptop='15px'
+            <SiReact className='icon' size={'3em'} />
+            <TextSkills
+              margin='0px 0px 0px 0px'
+              textAlign='center'
+              fontSizeDesktopL='25px'
+              fontSizeLaptop='15px'
+            >
+              React
+            </TextSkills>
+          </ContainerSkills>
+          <ContainerSkills
+            flexDirection='column'
+            alignItems='center'
+            gap='0px'
+            fontSizeDesktopL='2em'
+            fontSizeLaptopL='1em'
+            fontSizeLaptop='0.9em'
+            fontSizeTablet='0.7em'
+            fontSizeMobileL='0.7em'
+            fontSizeMobileM='0.7em'
+            fontSizeMobileS='0.7em'
           >
-            Bootstrap
-          </TextSkills>
-        </ContainerSkills>
-        <ContainerSkills
-          flexDirection='column'
-          alignItems='center'
-          gap='0px'
-          fontSizeDesktopL='2em'
-          fontSizeLaptopL='1em'
-          fontSizeLaptop='0.9em'
-          fontSizeTablet='0.7em'
-          fontSizeMobileL='0.7em'
-          fontSizeMobileM='0.7em'
-          fontSizeMobileS='0.7em'
-        >
-          <SiStyledcomponents className='icon' size={'3em'} />
-          <TextSkills
-            margin='0px 0px 0px 0px'
-            textAlign='center'
-            fontSizeDesktopL='25px'
-            fontSizeLaptop='15px'
+            <SiBootstrap className='icon' size={'3em'} />
+            <TextSkills
+              margin='0px 0px 0px 0px'
+              textAlign='center'
+              fontSizeDesktopL='25px'
+              fontSizeLaptop='15px'
+            >
+              Bootstrap
+            </TextSkills>
+          </ContainerSkills>
+          <ContainerSkills
+            flexDirection='column'
+            alignItems='center'
+            gap='0px'
+            fontSizeDesktopL='2em'
+            fontSizeLaptopL='1em'
+            fontSizeLaptop='0.9em'
+            fontSizeTablet='0.7em'
+            fontSizeMobileL='0.7em'
+            fontSizeMobileM='0.7em'
+            fontSizeMobileS='0.7em'
           >
-            Style Components
-          </TextSkills>
-        </ContainerSkills>
-        <ContainerSkills
-          flexDirection='column'
-          alignItems='center'
-          gap='0px'
-          fontSizeDesktopL='2em'
-          fontSizeLaptopL='1em'
-          fontSizeLaptop='0.9em'
-          fontSizeTablet='0.7em'
-          fontSizeMobileL='0.7em'
-          fontSizeMobileM='0.7em'
-          fontSizeMobileS='0.7em'
-        >
-          <SiNodedotjs className='icon' size={'3em'} />
-          <TextSkills
-            margin='0px 0px 0px 0px'
-            textAlign='center'
-            fontSizeDesktopL='25px'
-            fontSizeLaptop='15px'
+            <SiStyledcomponents className='icon' size={'3em'} />
+            <TextSkills
+              margin='0px 0px 0px 0px'
+              textAlign='center'
+              fontSizeDesktopL='25px'
+              fontSizeLaptop='15px'
+            >
+              Style Components
+            </TextSkills>
+          </ContainerSkills>
+          <ContainerSkills
+            flexDirection='column'
+            alignItems='center'
+            gap='0px'
+            fontSizeDesktopL='2em'
+            fontSizeLaptopL='1em'
+            fontSizeLaptop='0.9em'
+            fontSizeTablet='0.7em'
+            fontSizeMobileL='0.7em'
+            fontSizeMobileM='0.7em'
+            fontSizeMobileS='0.7em'
           >
-            NodeJS
-          </TextSkills>
-        </ContainerSkills>
-        <ContainerSkills
-          flexDirection='column'
-          alignItems='center'
-          gap='0px'
-          fontSizeDesktopL='2em'
-          fontSizeLaptopL='1em'
-          fontSizeLaptop='0.9em'
-          fontSizeTablet='0.7em'
-          fontSizeMobileL='0.7em'
-          fontSizeMobileM='0.7em'
-          fontSizeMobileS='0.7em'
-        >
-          <SiMongodb className='icon' size={'3em'} />
-          <TextSkills
-            margin='0px 0px 0px 0px'
-            textAlign='center'
-            fontSizeDesktopL='25px'
-            fontSizeLaptop='15px'
+            <SiNodedotjs className='icon' size={'3em'} />
+            <TextSkills
+              margin='0px 0px 0px 0px'
+              textAlign='center'
+              fontSizeDesktopL='25px'
+              fontSizeLaptop='15px'
+            >
+              NodeJS
+            </TextSkills>
+          </ContainerSkills>
+          <ContainerSkills
+            flexDirection='column'
+            alignItems='center'
+            gap='0px'
+            fontSizeDesktopL='2em'
+            fontSizeLaptopL='1em'
+            fontSizeLaptop='0.9em'
+            fontSizeTablet='0.7em'
+            fontSizeMobileL='0.7em'
+            fontSizeMobileM='0.7em'
+            fontSizeMobileS='0.7em'
           >
-            MongoDB
-          </TextSkills>
-        </ContainerSkills>
-        <ContainerSkills
-          flexDirection='column'
-          alignItems='center'
-          gap='0px'
-          fontSizeDesktopL='2em'
-          fontSizeLaptopL='1em'
-          fontSizeLaptop='0.9em'
-          fontSizeTablet='0.7em'
-          fontSizeMobileL='0.7em'
-          fontSizeMobileM='0.6em'
-          fontSizeMobileS='0.7em'
-        >
-          <SiNextdotjs className='icon' size={'3em'} />
-          <TextSkills
-            margin='0px 0px 0px 0px'
-            textAlign='center'
-            fontSizeDesktopL='25px'
-            fontSizeLaptop='15px'
+            <SiMongodb className='icon' size={'3em'} />
+            <TextSkills
+              margin='0px 0px 0px 0px'
+              textAlign='center'
+              fontSizeDesktopL='25px'
+              fontSizeLaptop='15px'
+            >
+              MongoDB
+            </TextSkills>
+          </ContainerSkills>
+          <ContainerSkills
+            flexDirection='column'
+            alignItems='center'
+            gap='0px'
+            fontSizeDesktopL='2em'
+            fontSizeLaptopL='1em'
+            fontSizeLaptop='0.9em'
+            fontSizeTablet='0.7em'
+            fontSizeMobileL='0.7em'
+            fontSizeMobileM='0.6em'
+            fontSizeMobileS='0.7em'
           >
-            NextJS
-          </TextSkills>
-        </ContainerSkills>
-        <ContainerSkills
-          flexDirection='column'
-          alignItems='center'
-          gap='0px'
-          fontSizeDesktopL='2em'
-          fontSizeLaptopL='1em'
-          fontSizeLaptop='0.9em'
-          fontSizeTablet='0.7em'
-          fontSizeMobileL='0.7em'
-          fontSizeMobileM='0.7em'
-          fontSizeMobileS='0.7em'
-        >
-          <SiStorybook className='icon' size={'3em'} />
-          <TextSkills
-            margin='0px 0px 0px 0px'
-            textAlign='center'
-            fontSizeDesktopL='25px'
-            fontSizeLaptop='15px'
+            <SiNextdotjs className='icon' size={'3em'} />
+            <TextSkills
+              margin='0px 0px 0px 0px'
+              textAlign='center'
+              fontSizeDesktopL='25px'
+              fontSizeLaptop='15px'
+            >
+              NextJS
+            </TextSkills>
+          </ContainerSkills>
+          <ContainerSkills
+            flexDirection='column'
+            alignItems='center'
+            gap='0px'
+            fontSizeDesktopL='2em'
+            fontSizeLaptopL='1em'
+            fontSizeLaptop='0.9em'
+            fontSizeTablet='0.7em'
+            fontSizeMobileL='0.7em'
+            fontSizeMobileM='0.7em'
+            fontSizeMobileS='0.7em'
           >
-            Storybook
-          </TextSkills>
+            <SiStorybook className='icon' size={'3em'} />
+            <TextSkills
+              margin='0px 0px 0px 0px'
+              textAlign='center'
+              fontSizeDesktopL='25px'
+              fontSizeLaptop='15px'
+            >
+              Storybook
+            </TextSkills>
+          </ContainerSkills>
         </ContainerSkills>
-      </ContainerSkills>
+      </ContainerStyle>
     </Container>
   );
 });

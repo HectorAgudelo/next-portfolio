@@ -8,12 +8,14 @@ import ContactInfo from '../components/ContactInfo';
 import React, { useRef } from 'react';
 
 export default function Home() {
+
   const home = useRef(null);
   const about = useRef(null);
   const projects = useRef(null);
   const contact = useRef(null);
 
   const scrollDown = (ref) => {
+    console.log('hit')
     window.scrollTo({
       top: ref.current.offsetTop,
       behavior: 'smooth',
@@ -23,7 +25,7 @@ export default function Home() {
   return (
     <div>
       <NavigationBar
-        about={() => scrollDown(about)}
+        about={() => {scrollDown(about); console.log('component')}}
         home={() => scrollDown(home)}
         projects={() => scrollDown(projects)}
         contact={() => scrollDown(contact)}

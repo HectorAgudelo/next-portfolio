@@ -1,25 +1,25 @@
 import React, { forwardRef } from 'react';
+import { Container } from 'react-bootstrap';
 import styles from 'styled-components';
 import Typewriter from 'typewriter-effect';
 import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs';
 import style from './HomeComp.module.css';
 import { device } from '../DeviceScreens';
 
-const Section = styles.section`
+const Section = styles.div`
 display: flex;
 flex-direction: column;
-align-items: start;
 justify-content: center;
 background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.6)), url('/background.module.jpeg');
-background-size: cover;
-height: 100vh;
-width: auto;
+
+
 
 @media ${device.mobileS}{
   background-size: cover;
-  height: 125vh;
-  width: 125vmin;
+  height: 100vh;
+  width: 100%;
   align-items: center;
+  
 };
 
 @media ${device.mobileM}{
@@ -35,7 +35,7 @@ width: auto;
   width: 125vmin;
   align-items: center;
 };
-
+=
 @media ${device.tablet}{
   background-size: cover;
   height: 100vh;
@@ -147,7 +147,7 @@ color: #393E41 !important;
 
 `;
 
-const Container = styles.div`
+const ContainerStyle = styles.div`
 margin: 20px 40px;
 display: flex;
 flex-direction: row;
@@ -201,50 +201,52 @@ justify-content:center;
 
 const HomeComp = forwardRef((props, ref) => {
   return (
-    <Section ref={ref} {...props}>
-      <Title>Hector Agudelo-Carmona</Title>
-      <Text>
-        I am a
-        <Typewriter
-          className={style.Typewriter__wrapper}
-          options={{
-            strings: [
-              'Frontend Developer',
-              'Software Engineer',
-              'Software Developer',
-            ],
-            autoStart: true,
-            loop: true,
-          }}
-        />
-      </Text>
-      <Container>
-        <a
-          className={style.a}
-          href='https://www.linkedin.com/in/hector-agudelo-34aa62119/'
-          rel='noreferrer'
-          target='_blank'
-        >
-          <BsLinkedin className={style.icon} size={'1.5em'} />
-        </a>
-        <a
-          className={style.a}
-          href='https://github.com/HectorAgudelo'
-          rel='noreferrer'
-          target='_blank'
-        >
-          <BsGithub className={style.icon} size={'1.5em'} />
-        </a>
-        <a
-          className={style.a}
-          href='https://twitter.com/DevAgudelo'
-          rel='noreferrer'
-          target='_blank'
-        >
-          <BsTwitter className={style.icon} size={'1.5em'} />
-        </a>
-      </Container>
-    </Section>
+    <Container fluid style={{padding:'0px'}} ref={ref} {...props} >
+      <Section >
+        <Title>Hector Agudelo-Carmona</Title>
+        <Text>
+          I am a
+          <Typewriter
+            className={style.Typewriter__wrapper}
+            options={{
+              strings: [
+                'Frontend Developer',
+                'Software Engineer',
+                'Software Developer',
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </Text>
+        <ContainerStyle>
+          <a
+            className={style.a}
+            href='https://www.linkedin.com/in/hector-agudelo-34aa62119/'
+            rel='noreferrer'
+            target='_blank'
+          >
+            <BsLinkedin className={style.icon} size={'1.5em'} />
+          </a>
+          <a
+            className={style.a}
+            href='https://github.com/HectorAgudelo'
+            rel='noreferrer'
+            target='_blank'
+          >
+            <BsGithub className={style.icon} size={'1.5em'} />
+          </a>
+          <a
+            className={style.a}
+            href='https://twitter.com/DevAgudelo'
+            rel='noreferrer'
+            target='_blank'
+          >
+            <BsTwitter className={style.icon} size={'1.5em'} />
+          </a>
+        </ContainerStyle>
+      </Section>
+    </Container>
   );
 });
 

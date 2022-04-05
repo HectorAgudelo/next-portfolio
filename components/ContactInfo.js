@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import { Container } from 'react-bootstrap';
 import styles from 'styled-components';
 import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs';
 import { device } from './DeviceScreens';
@@ -9,14 +10,14 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 background: #8a5c68;
-background-size: cover;
+
 
 
 
 @media ${device.mobileS}{
-  background-size: cover;
-  height: 40vh ;
-  width: 125vmin;
+  
+  height: 32% ;
+  width: 100%;
   align-items: center;
 };
 
@@ -143,7 +144,7 @@ color: #d3d0cb !important;
 
 `;
 
-const Container = styles.div`
+const ContainerStyle = styles.div`
 
 display: flex;
 flex-wrap: ${(props) => props.flexWrap};
@@ -198,8 +199,9 @@ justify-content:center;
 
 const ContactInfo = forwardRef((props, ref) => {
   return (
-    <Section ref={ref} {...props}>
-      <Container flexDirectionMobileS='column'>
+    <Container fluid style={{padding:'0px'}}>
+       <Section ref={ref} {...props}>
+      <ContainerStyle flexDirectionMobileS='column'>
         <Title
           fontSizeDesktopL='80px'
           fontSizeLaptopL='45px'
@@ -219,8 +221,8 @@ const ContactInfo = forwardRef((props, ref) => {
         >
           Contact
         </Title>
-        <Container flexDirectionMobileS='row' flexWrap='wrap'>
-          <Container
+        <ContainerStyle flexDirectionMobileS='row' flexWrap='wrap'>
+          <ContainerStyle
             justifyContent='center'
             alignItems='center'
             flexDirectionMobileS='column'
@@ -254,8 +256,8 @@ const ContactInfo = forwardRef((props, ref) => {
             >
               New York City Metro Area
             </Text>
-          </Container>
-          <Container
+          </ContainerStyle>
+          <ContainerStyle
             flexDirectionMobileS='column'
             justifyContent='center'
             alignItems='center'
@@ -291,10 +293,10 @@ const ContactInfo = forwardRef((props, ref) => {
                 haacny86@gmail.com
               </a>
             </Text>
-          </Container>
-        </Container>
-      </Container>
-      <Container
+          </ContainerStyle>
+        </ContainerStyle>
+      </ContainerStyle>
+      <ContainerStyle
         flexDirectionMobileS='row'
         marginMobileS='20px'
         marginMobileM='20px'
@@ -344,8 +346,10 @@ const ContactInfo = forwardRef((props, ref) => {
             size={'1.5em'}
           />
         </a>
-      </Container>
+      </ContainerStyle>
     </Section>
+    </Container>
+   
   );
 });
 

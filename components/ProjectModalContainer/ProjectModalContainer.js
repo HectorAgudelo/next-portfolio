@@ -2,10 +2,10 @@ import React, { forwardRef } from 'react';
 import styles from 'styled-components';
 import { ProjectModalRender } from '../ProjectModalRender';
 import { device } from '../DeviceScreens';
-import { Button } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import style from './ProjectModalContainer.module.css';
 
-const Container = styles.div`
+const ContainerStyle = styles.div`
 flex-wrap: wrap;
 display: flex;
 flex-direction: ${(props) => props.flexDirection};
@@ -107,7 +107,7 @@ color: #393E41 !important;
 
 `;
 
-const Section = styles.section`
+const Section = styles.div`
 display: flex;
 flex-direction: ${(props) => props.flexDirection};
 align-items: ${(props) => props.alignItems};
@@ -116,10 +116,10 @@ justify-content: center;
 
 @media ${device.mobileS}{
   margin: ${(props) => props.marginMobileS};
-  padding: 0px 10px;
+  padding: 0px;
  gap: ${(props) => props.gapMobileS};
 
-  width: 125vmin;
+  width: 100%;
   height: ${(props) => props.viewHeightMobileS};
 };
 
@@ -224,7 +224,8 @@ text-shadow: ${(props) => props.textShadow};
 
 const ProjectModalContainer = forwardRef((props, ref) => {
   return (
-    <Section
+   <Container fluid style={{padding:'0px', marginTop:'140px'}}>
+     <Section
       ref={ref}
       {...props}
       flexDirection='column'
@@ -249,7 +250,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
       viewHeightTablet='146vh'
       viewHeightMobileL='144vh'
       viewHeightMobileM='141vh'
-      viewHeightMobileS='136vh'
+      viewHeightMobileS='100%'
     >
       <Section
         flexDirection='column'
@@ -261,7 +262,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
         viewHeightTablet='25vh'
         viewHeightMobileL='25vh'
         viewHeightMobileM='23vh'
-        viewHeightMobileS='25vh'
+        viewHeightMobileS='25%'
       >
         <Title
           titleAlign='center'
@@ -284,7 +285,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
           Projects
         </Title>
         <Text
-          margin='0px 0px 0px 0px'
+          margin='0px 20px 0px 20px'
           textAlign='center'
           fontSizeDesktopL='35px'
           fontSizeLaptopL='20px'
@@ -300,7 +301,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
           tempor incididunt ut labore et dolore magna aliqua.
         </Text>
       </Section>
-      <Container
+      <ContainerStyle
         flexDirection='row'
         alignItems='center'
         gapDesktopL='60px'
@@ -352,8 +353,10 @@ const ProjectModalContainer = forwardRef((props, ref) => {
             </Button>
           }
         />
-      </Container>
+      </ContainerStyle>
     </Section>
+   </Container>
+    
   );
 });
 

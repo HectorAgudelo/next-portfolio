@@ -18,11 +18,11 @@ window.addEventListener('scroll', changeBackground);
   }, []);
 
   return (
-    <Navbar
+    <Navbar style={{width:'100%'}}
       collapseOnSelect
       expand='lg'
       variant='light'
-      fixed='top'
+      sticky='top'
       className={
         background
           ? style.backgroundChange
@@ -35,7 +35,7 @@ window.addEventListener('scroll', changeBackground);
           href='#home'
           onClick={props.home}
         >
-          Hector Agudelo
+          HA
         </Navbar.Brand>
         <Navbar.Toggle
           className={style.toggler}
