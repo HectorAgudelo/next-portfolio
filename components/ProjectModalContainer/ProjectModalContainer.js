@@ -224,7 +224,7 @@ text-shadow: ${(props) => props.textShadow};
 
 const ProjectModalContainer = forwardRef((props, ref) => {
   return (
-   <Container fluid style={{padding:'0px', marginTop:'140px'}}>
+   <Container fluid style={{padding:'0px', marginTop:'0px'}}>
      <Section
       ref={ref}
       {...props}
@@ -273,7 +273,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
           marginTablet='0px 0px 5px 0px'
           marginMobileL='0px 0px 5px 0px'
           marginMobileM='0px 0px 5px 0px'
-          marginMobileS='0px 0px 5px 0px'
+          marginMobileS='30px 0px 10px 0px'
           fontSizeDesktopL='80px'
           fontSizeLaptopL='45px'
           fontSizeLaptop='40px'
@@ -285,7 +285,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
           Projects
         </Title>
         <Text
-          margin='0px 20px 0px 20px'
+          margin='0px 20px 10px 20px'
           textAlign='center'
           fontSizeDesktopL='35px'
           fontSizeLaptopL='20px'

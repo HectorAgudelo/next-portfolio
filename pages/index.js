@@ -15,9 +15,8 @@ export default function Home() {
   const contact = useRef(null);
 
   const scrollDown = (ref) => {
-    console.log('hit')
     window.scrollTo({
-      top: ref.current.offsetTop,
+      top: ref.current.offsetTop-48,
       behavior: 'smooth',
     });
   };

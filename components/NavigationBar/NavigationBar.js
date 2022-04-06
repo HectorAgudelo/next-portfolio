@@ -22,7 +22,7 @@ window.addEventListener('scroll', changeBackground);
       collapseOnSelect
       expand='lg'
       variant='light'
-      sticky='top'
+      fixed='top'
       className={
         background
           ? style.backgroundChange

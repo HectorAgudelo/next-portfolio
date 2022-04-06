@@ -211,7 +211,7 @@ justify-content:center;
 @media ${device.mobileS}{
   gap: 0px;
   margin: 0px 0px;
-  height: 50%;
+  height: 100%;
   width: 100%;
 };
 
@@ -269,7 +269,7 @@ justify-content:center;
   display: flex;
   gap: ${(props) => props.gapMobileS};
   font-Size: ${(props) => props.fontSizeMobileS};
-  height: 10vh;
+  height: 0%;
   
 };
 
@@ -484,7 +484,7 @@ const About = forwardRef((props, ref) => {
             marginTablet='0px 0px 5px 0px'
             marginMobileL='0px 0px 5px 0px'
             marginMobileM='0px 0px 5px 0px'
-            marginMobileS='0px 0px 5px 0px'
+            marginMobileS='30px 0px 5px 0px'
             fontSizeDesktopL='80px'
             fontSizeLaptopL='45px'
             fontSizeLaptop='40px'
@@ -784,7 +784,7 @@ const About = forwardRef((props, ref) => {
               fontSizeDesktopL='25px'
               fontSizeLaptop='15px'
             >
-              Style Components
+              Style <br/> Components
             </TextSkills>
           </ContainerSkills>
           <ContainerSkills
