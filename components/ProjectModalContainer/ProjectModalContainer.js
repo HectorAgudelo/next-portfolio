@@ -129,7 +129,7 @@ justify-content: center;
  
   gap: ${(props) => props.gapMobileM};
   height: ${(props) => props.viewHeightMobileM};
-  width: 125vmin;
+  width: 100%;
   
 };
 
@@ -139,7 +139,7 @@ justify-content: center;
   height: ${(props) => props.viewHeightMobileL};
   gap: ${(props) => props.gapMobileL};
   
-  width: 125vmin;
+  width: 100%;
 
 };
 
@@ -148,7 +148,7 @@ justify-content: center;
   height: ${(props) => props.viewHeightTablet};
   gap: ${(props) => props.gapTablet};
 
-  width: auto;
+  width: 100%;
 };
 
 @media ${device.laptop}{
@@ -244,35 +244,35 @@ const ProjectModalContainer = forwardRef((props, ref) => {
       gapMobileL='0px'
       gapMobileM='0px'
       gapMobileS='0px'
-      viewHeightDesktopL='45vh'
-      viewHeightLaptopL='90vh'
-      viewHeightLaptop='142vh'
-      viewHeightTablet='146vh'
-      viewHeightMobileL='144vh'
-      viewHeightMobileM='141vh'
+      viewHeightDesktopL='45%'
+      viewHeightLaptopL='90%'
+      viewHeightLaptop='142%'
+      viewHeightTablet='146%'
+      viewHeightMobileL='144%'
+      viewHeightMobileM='141%'
       viewHeightMobileS='100%'
     >
       <Section
         flexDirection='column'
         alignItems='center'
         gap='0px'
-        viewHeightDesktopL='30vh'
-        viewHeightLaptopL='48vh'
-        viewHeightLaptop='20vh'
-        viewHeightTablet='25vh'
-        viewHeightMobileL='25vh'
-        viewHeightMobileM='23vh'
+        viewHeightDesktopL='30%'
+        viewHeightLaptopL='48%'
+        viewHeightLaptop='20%'
+        viewHeightTablet='25%'
+        viewHeightMobileL='25%'
+        viewHeightMobileM='23%'
         viewHeightMobileS='25%'
       >
         <Title
           titleAlign='center'
           textShadow='2px 5px 0 rgba(0,0,0,0.2)'
-          marginDesktopL='100px 0px 40px 0px'
-          marginLaptopL='90px 0px 20px 0px'
-          marginLaptop=' 40px 0px 10px 0px'
-          marginTablet='0px 0px 5px 0px'
-          marginMobileL='0px 0px 5px 0px'
-          marginMobileM='0px 0px 5px 0px'
+          marginDesktopL='30px 0px 40px 0px'
+          marginLaptopL='30px 0px 20px 0px'
+          marginLaptop=' 30px 0px 10px 0px'
+          marginTablet='30px 0px 5px 0px'
+          marginMobileL='30px 0px 5px 0px'
+          marginMobileM='30px 0px 5px 0px'
           marginMobileS='30px 0px 10px 0px'
           fontSizeDesktopL='80px'
           fontSizeLaptopL='45px'
@@ -308,8 +308,8 @@ const ProjectModalContainer = forwardRef((props, ref) => {
         gapLaptopL='30px'
         gapLaptop='20px'
         gapTablet='10px'
-        gapMobileL='20px'
-        gapMobileM='20px'
+        gapMobileL='10px'
+        gapMobileM='10px'
         gapMobileS='15px'
       >
         <ProjectModalRender

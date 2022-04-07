@@ -28,13 +28,13 @@ const Image = styles.img`
 
 @media ${device.mobileM}{
   margin: 0px;
-  height: 400px;
+  height: 350px;
   width: auto;
 };
 
 @media ${device.mobileL}{
   margin: 0px;
-  height: 500px;
+  height: 400px;
   width: auto;
 };
 
@@ -219,42 +219,42 @@ justify-content:center;
 @media ${device.mobileM}{
   gap: 0px;
   margin: 0px 0px;
-  height: 176vh;
-  width: 125vmin;
+  height: 176%;
+  width: 100%;
 };
 
 
 @media ${device.mobileL}{
   gap: 0px;
   margin: 0px 0px;
-  height: 181vh;
-  width: 125vmin;
+  height: 181%;
+  width: 100%;
 };
 
 @media ${device.tablet}{
   gap: 0px;
   margin: 0px 20px;
-  height: 143vh;
-  width: auto;
+  height: 143%;
+  width: 100%;
 };
 
 @media ${device.laptop}{
   gap: 0px;
   margin: 0px 30px;
-  height: 118vh;
-  width: auto;
+  height: 118%;
+  width: 100%;
 };
 
 @media ${device.laptopL}{
   gap: 16px;
-  height: 140vh;
-  width: auto;
+  height: 140%;
+  width: 100%;
 };
 
 @media ${device.desktopL}{
 gap: 16px;
-height: 132vh;
-width: auto;
+height: 132%;
+width: 100%;
 };
 
 `;
@@ -277,7 +277,7 @@ justify-content:center;
   display: flex;
   gap: ${(props) => props.gapMobileM};
   font-Size: ${(props) => props.fontSizeMobileM};
-  height: 10vh;
+  height: 0%;
   
 };
 
@@ -285,7 +285,7 @@ justify-content:center;
   display: flex;
   gap: ${(props) => props.gapMobileL};
   font-Size: ${(props) => props.fontSizeMobileL};
-  height: 10vh;
+  height: 0%;
   
 };
 
@@ -293,14 +293,14 @@ justify-content:center;
   display: flex;
   gap: ${(props) => props.gapTablet};
   font-Size: ${(props) => props.fontSizeTablet};
-  height:10vh;
+  height: 0%;
 };
 
 @media ${device.laptop}{
   display: flex;
   gap: ${(props) => props.gapLaptop};
   font-Size: ${(props) => props.fontSizeLaptop};
-  height:10vh;
+  height: 0%;
   margin: 0px 20px 0px 20px;
 };
 
@@ -308,7 +308,7 @@ justify-content:center;
  display: flex;
   gap: ${(props) => props.gapLaptopL};
   font-Size: ${(props) => props.fontSizeLaptopL};
-  height:10vh;
+  height: 0%;
   margin: 0px 40px 0px 40px;
 };
 
@@ -317,7 +317,7 @@ justify-content:center;
   display: flex;
   gap: ${(props) => props.gapDesktopL};
   font-Size: ${(props) => props.fontSizeDesktopL};
-  height:10vh;
+  height: 0%;
   margin: 0px 40px 0px 40px;
 };
 
@@ -335,7 +335,7 @@ justify-content: center;
   height: ${(props) => props.viewHeightMobileS};
   gap: ${(props) => props.gapMobileS};
 
-  width: 100vw;
+  width: 100%;
 };
 
 @media ${device.mobileM}{
@@ -344,7 +344,7 @@ justify-content: center;
   height: ${(props) => props.viewHeightMobileM};
   gap: ${(props) => props.gapMobileM};
 
-  width: 125vmin;
+  width: 100%;
 };
 
 @media ${device.mobileL}{
@@ -353,7 +353,7 @@ justify-content: center;
   height: ${(props) => props.viewHeightMobileL};
   gap: ${(props) => props.gapMobileL};
 
-  width: 125vmin;
+  width: 100%;
 };
 
 @media ${device.tablet}{
@@ -361,7 +361,7 @@ justify-content: center;
   height: ${(props) => props.viewHeightTablet};
   gap: ${(props) => props.gapTablet};
 
-  width: auto;
+  width: 100%;
 };
 
 @media ${device.laptop}{
@@ -472,18 +472,18 @@ color: #393E41 !important;
 
 const About = forwardRef((props, ref) => {
   return (
-    <Container  fluid style={{ padding: '0px' }} ref={ref} {...props}>
-      <ContainerStyle >
+    <Container fluid style={{ padding: '0px' }} ref={ref} {...props}>
+      <ContainerStyle>
         <Section flexDirection='column' alignItems='center'>
           <Title
             titleAlign='center'
             textShadow='2px 5px 0 rgba(0,0,0,0.2)'
-            marginDesktopL='0px 0px 40px 0px'
-            marginLaptopL='0px 0px 20px 0px'
-            marginLaptop='0px 0px 10px 0px'
-            marginTablet='0px 0px 5px 0px'
-            marginMobileL='0px 0px 5px 0px'
-            marginMobileM='0px 0px 5px 0px'
+            marginDesktopL='30px 0px 40px 0px'
+            marginLaptopL='30px 0px 20px 0px'
+            marginLaptop='30px 0px 10px 0px'
+            marginTablet='30px 0px 5px 0px'
+            marginMobileL='30px 0px 5px 0px'
+            marginMobileM='30px 0px 5px 0px'
             marginMobileS='30px 0px 5px 0px'
             fontSizeDesktopL='80px'
             fontSizeLaptopL='45px'
@@ -552,7 +552,7 @@ const About = forwardRef((props, ref) => {
               fontSizeMobileM='20px'
               fontSizeMobileS='20px'
               textShadow='none'
-              margin='0px 0px 10px 0px'
+              margin='0px 0px 0px 0px'
             >
               Frontend Developer
             </Title>
@@ -582,24 +582,18 @@ const About = forwardRef((props, ref) => {
             </Text>
           </Section>
         </Section>
-        <SectionSkills flexDirection='column' alignItems='center' gap='0px'>
+        <SectionSkills flexDirection='column' alignItems='center' gap='10px'>
           <TitleSkills
             titleAlign='center'
-            textShadow='2px 5px 0 rgba(0,0,0,0.2)'
-            marginDesktopL='0px 0px 40px 0px'
-            marginLaptopL='40px 0px 20px 0px'
-            marginLaptop='40px 0px 10px 0px'
-            marginTablet='40px 0px 5px 0px'
-            marginMobileL='40px 0px 5px 0px'
-            marginMobileM='40px 0px 5px 0px'
-            marginMobileS='40px 0px 5px 0px'
-            fontSizeDesktopL='80px'
-            fontSizeLaptopL='45px'
-            fontSizeLaptop='40px'
-            fontSizeTablet='35px'
-            fontSizeMobileL='35px'
-            fontSizeMobileM='30px'
-            fontSizeMobileS='25px'
+            textShadow='none'
+            margin='20px 0px 10px 0px'
+            fontSizeDesktopL='50px'
+            fontSizeLaptopL='30px'
+            fontSizeLaptop='20px'
+            fontSizeTablet='20px'
+            fontSizeMobileL='20px'
+            fontSizeMobileM='20px'
+            fontSizeMobileS='20px'
           >
             Skills
           </TitleSkills>
@@ -784,7 +778,7 @@ const About = forwardRef((props, ref) => {
               fontSizeDesktopL='25px'
               fontSizeLaptop='15px'
             >
-              Style <br/> Components
+              Style <br /> Components
             </TextSkills>
           </ContainerSkills>
           <ContainerSkills

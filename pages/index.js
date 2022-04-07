@@ -22,7 +22,7 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div style={{height:'100%'}}>
       <NavigationBar
         about={() => {scrollDown(about); console.log('component')}}
         home={() => scrollDown(home)}

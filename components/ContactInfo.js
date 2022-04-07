@@ -22,23 +22,23 @@ background: #8a5c68;
 };
 
 @media ${device.mobileM}{
-  background-size: cover;
-  height: 40vh;
-  width: 125vmin;
+  
+  height: 40%;
+  width: 100%;
   align-items: center;
 };
 
 @media ${device.mobileL}{
   background-size: cover;
-  height: 35vh;
-  width: 125vmin;
+  height: 35%;
+  width: 100%;
   align-items: center;
 };
 
 @media ${device.tablet}{
   background-size: cover;
-  height: 30vh;
-  width: auto;
+  height: 30%;
+  width: 100%;
   align-items: center;
   margin-top: 10px
 };
@@ -48,7 +48,7 @@ background: #8a5c68;
 };
 
 @media ${device.laptopL}{
-    height: 31vh;
+    height: 31%;
     margin-top: 65px
 };
 

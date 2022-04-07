@@ -24,15 +24,15 @@ background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.6)), url('
 
 @media ${device.mobileM}{
   background-size: cover;
-  height: 125vh;
-  width: 125vmin;
+  height: 100vh;
+  width: 100%;
   align-items: center;
 };
 
 @media ${device.mobileL}{
   background-size: cover;
-  height: 125vh;
-  width: 125vmin;
+  height: 100vh;
+  width: 100%;
   align-items: center;
 };
 =
@@ -69,12 +69,12 @@ color: #393E41;
 };
 
 @media ${device.mobileM}{
-  font-size: 30px;
+  font-size: 25px;
   margin: 4px 0px;
 };
 
 @media ${device.mobileL}{
-  font-size: 30px;
+  font-size: 25px;
   margin: 4px 60px;
 };
 
