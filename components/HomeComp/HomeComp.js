@@ -1,210 +1,56 @@
 import React, { forwardRef } from 'react';
 import { Container } from 'react-bootstrap';
-import styles from 'styled-components';
 import Typewriter from 'typewriter-effect';
 import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs';
 import style from './HomeComp.module.css';
-import { device } from '../DeviceScreens';
+import { Section } from '../GlobalComponents/Section';
+import { ContainerStyle } from '../GlobalComponents/ContainerStyle';
+import {Title} from '../GlobalComponents/Tittle'
+import {TextHome} from '../GlobalComponents/TextHome'
 
-const Section = styles.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.6)), url('/background.module.jpeg');
-
-
-
-@media ${device.mobileS}{
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  align-items: center;
-  
-};
-
-@media ${device.mobileM}{
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  align-items: center;
-};
-
-@media ${device.mobileL}{
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  align-items: center;
-};
-=
-@media ${device.tablet}{
-  background-size: cover;
-  height: 100vh;
-  width: auto;
-  align-items: start;
-};
-
-@media ${device.laptop}{
-
-};
-
-@media ${device.laptopL}{
-  height: 107vh;
-};
-
-@media ${device.desktopL}{
-  height: 107vh;
-};
-
-
-
-`;
-
-const Title = styles.h1`
-margin: 2px 40px;
-color: #393E41;
-
-@media ${device.mobileS}{
-  font-size: 25px;
-  margin: 4px 0px;
-};
-
-@media ${device.mobileM}{
-  font-size: 25px;
-  margin: 4px 0px;
-};
-
-@media ${device.mobileL}{
-  font-size: 25px;
-  margin: 4px 60px;
-};
-
-@media ${device.tablet}{
-  font-size: 30px;
-  margin: 4px 80px;
-};
-
-@media ${device.laptop}{
-  font-size: 35px;
-  margin: 4px 100px;
-};
-
-@media ${device.laptopL}{
-  font-size: 40px;
-  margin: 4px 200px;
-};
-
-@media ${device.desktopL}{
-font-size: 80px;
-margin: 4px 400px;
-};
-
-
-
-`;
-
-const Text = styles.h3`
-display: inline-flex;
-margin: 2px 40px;
-gap: 8px;
-color: #393E41 !important;
-
-@media ${device.mobileS}{
-  font-size: 20px;
-  margin: 4px 0px;
-};
-
-@media ${device.mobileM}{
-  font-size: 20px;
-  margin: 4px 0px;
-};
-
-@media ${device.mobileL}{
-  font-size: 20px;
-  margin: 4px 60px;
-};
-
-@media ${device.tablet}{
-  font-size: 20px;
-  margin: 4px 80px;
-};
-
-@media ${device.laptop}{
-  font-size: 20px;
-  margin: 4px 100px;
-};
-  
-@media ${device.laptopL}{
-    font-size: 20px;
-    margin: 4px 200px;
-  };
-
-  @media ${device.desktopL}{
-  font-size: 40px;
-  margin: 4px 400px;
-  };
-
-
-
-`;
-
-const ContainerStyle = styles.div`
-margin: 20px 40px;
-display: flex;
-flex-direction: row;
-align-items: start;
-justify-content:center;
-
-@media ${device.mobileS}{
-  font-size: 0.7em;
-  margin: 15px 60px;
-  gap: 15px;
-};
-
-@media ${device.mobileM}{
-  font-size: 0.9em;
-  margin: 15px 60px;
-  gap: 20px;
-};
-
-@media ${device.mobileL}{
-  font-size: 0.9em;
-  margin: 15px 60px;
-  gap: 20px;
-};
-
-@media ${device.tablet}{
-  font-size: 0.9em;
-  margin: 20px 80px;
-  gap: 20px;
-};
-
-@media ${device.laptop}{
-  font-size: 0.9em;
-  margin: 20px 100px;
-  gap: 30px;
-};
-
-@media ${device.laptopL}{
-  font-size: 1em;
-  margin: 20px 200px;
-  gap: 30px;
-};
-
-@media ${device.desktopL}{
-  font-size: 2em;
-  margin: 40px 400px;
-  gap: 30px;
-  };
-
-
-`;
 
 const HomeComp = forwardRef((props, ref) => {
   return (
-    <Container fluid style={{padding:'0px'}} ref={ref} {...props} >
-      <Section >
-        <Title>Hector Agudelo-Carmona</Title>
-        <Text>
+    <Container fluid style={{ padding: '0px' }} ref={ref} {...props}>
+      <Section
+        display='flex'
+        flexDirection='column'
+        justifyContent='center'
+        background='linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.6)), url("/background.module.jpeg")'
+        backgroundSizeMobileS='cover'
+        heightMobileS='100vh'
+        widthMobileS='100%'
+        alignItemsMobileS='center'
+        alignItemsTablet='start'
+      >
+        <Title
+        color='#393E41'
+        fontSizeMobileS='25px'
+        fontSizeTablet='30px'
+        fontSizeLaptop='35px'
+        fontSizeLaptopL='40px'
+        fontSizeDesktopL='80px'
+        marginMobileS='4px 0px'
+        marginMobileL='4px 60px'
+        marginTablet='4px 80px'
+        marginLaptop='4px 100px'
+        marginLaptopL='4px 200px'
+        marginDesktopL='4px 400px'
+
+        >Hector Agudelo-Carmona</Title>
+        <TextHome
+         display='inline-flex'
+         gap='15px'
+         color='#393E41 !important'
+         fontSizeMobileS='20px'
+         fontSizeDesktopL='40px'
+         marginMobileS='4px 0px'
+         marginMobileL='4px 60px'
+         marginTablet='4px 80px'
+         marginLaptop='4px 100px'
+         marginLaptopL='4px 200px'
+         marginDesktopL='4px 400px'
+        >
           I am a
           <Typewriter
             className={style.Typewriter__wrapper}
@@ -218,8 +64,25 @@ const HomeComp = forwardRef((props, ref) => {
               loop: true,
             }}
           />
-        </Text>
-        <ContainerStyle>
+        </TextHome>
+        <ContainerStyle
+          display='flex'
+          flexDirection='row'
+          alignItemsTablet='start'
+          justifyContent='center'
+          fontSizeMobileS='0.7em'
+          fontSizeMobileM='0.9em'
+          fontSizeLaptopL='1em'
+          fontSizeDesktopL='2em'
+          marginMobileS='15px 60px'
+          marginTablet='20px 80px'
+          marginLaptop='20px 100px'
+          marginLaptopL='20px 200px'
+          marginDesktopL='40px 400px'
+          gapMobileS='15px'
+          gapMobileM='20px'
+          gapLaptop='30px'
+        >
           <a
             className={style.a}
             href='https://www.linkedin.com/in/hector-agudelo-34aa62119/'

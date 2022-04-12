@@ -35,7 +35,7 @@ window.addEventListener('scroll', changeBackground);
           href='#home'
           onClick={props.home}
         >
-          HA
+          Hector Agudelo
         </Navbar.Brand>
         <Navbar.Toggle
           className={style.toggler}
