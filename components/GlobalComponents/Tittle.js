@@ -2,7 +2,7 @@ import styles from 'styled-components';
 import { device } from '../DeviceScreens';
 
 export const Title = styles.h1`
-
+margin: ${(props) => props.margin} ;
 color: ${(props) => props.color};
 text-align: ${(props) => props.titleAlign};
 text-shadow: ${(props) => props.textShadow};

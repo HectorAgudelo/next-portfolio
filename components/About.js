@@ -1,7 +1,5 @@
 import React, { forwardRef } from 'react';
 import { Container } from 'react-bootstrap';
-import styles from 'styled-components';
-import { device } from './DeviceScreens';
 import { Image } from './GlobalComponents/Image';
 import { Section } from './GlobalComponents/Section';
 import { Title } from './GlobalComponents/Tittle';
@@ -21,217 +19,7 @@ import {
   SiStorybook,
 } from 'react-icons/si';
 
-const ContainerSkills = styles.div`
-flex-wrap: wrap;
-display: flex;
-flex-direction: ${(props) => props.flexDirection};
-align-items: ${(props) => props.alignItems};
-justify-content:center;
 
-@media ${device.mobileS}{
-  display: flex;
-  gap: ${(props) => props.gapMobileS};
-  font-Size: ${(props) => props.fontSizeMobileS};
-  height: 0%;
-  
-};
-
-@media ${device.mobileM}{
-  display: flex;
-  gap: ${(props) => props.gapMobileM};
-  font-Size: ${(props) => props.fontSizeMobileM};
-  height: 0%;
-  
-};
-
-@media ${device.mobileL}{
-  display: flex;
-  gap: ${(props) => props.gapMobileL};
-  font-Size: ${(props) => props.fontSizeMobileL};
-  height: 0%;
-  
-};
-
-@media ${device.tablet}{
-  display: flex;
-  gap: ${(props) => props.gapTablet};
-  font-Size: ${(props) => props.fontSizeTablet};
-  height: 0%;
-};
-
-@media ${device.laptop}{
-  display: flex;
-  gap: ${(props) => props.gapLaptop};
-  font-Size: ${(props) => props.fontSizeLaptop};
-  height: 0%;
-  margin: 0px 20px 0px 20px;
-};
-
-@media ${device.laptopL}{
- display: flex;
-  gap: ${(props) => props.gapLaptopL};
-  font-Size: ${(props) => props.fontSizeLaptopL};
-  height: 0%;
-  margin: 0px 40px 0px 40px;
-};
-
-@media ${device.desktopL}{
-
-  display: flex;
-  gap: ${(props) => props.gapDesktopL};
-  font-Size: ${(props) => props.fontSizeDesktopL};
-  height: 0%;
-  margin: 0px 40px 0px 40px;
-};
-
-`;
-const SectionSkills = styles.div`
-display: flex;
-flex-direction: ${(props) => props.flexDirection};
-align-items: ${(props) => props.alignItems};
-justify-content: center;
-
-
-@media ${device.mobileS}{
-  margin: ${(props) => props.marginMobileS};
-  padding: 0px 10px;
-  height: ${(props) => props.viewHeightMobileS};
-  gap: ${(props) => props.gapMobileS};
-
-  width: 100%;
-};
-
-@media ${device.mobileM}{
-  margin: ${(props) => props.marginMobileM};
-  padding: 0px 10px;
-  height: ${(props) => props.viewHeightMobileM};
-  gap: ${(props) => props.gapMobileM};
-
-  width: 100%;
-};
-
-@media ${device.mobileL}{
-  margin: ${(props) => props.marginMobileL};
-  padding: 0px 10px;
-  height: ${(props) => props.viewHeightMobileL};
-  gap: ${(props) => props.gapMobileL};
-
-  width: 100%;
-};
-
-@media ${device.tablet}{
-  margin: ${(props) => props.marginTablet};
-  height: ${(props) => props.viewHeightTablet};
-  gap: ${(props) => props.gapTablet};
-
-  width: 100%;
-};
-
-@media ${device.laptop}{
-  margin: ${(props) => props.marginLaptop};
-  height: ${(props) => props.viewHeightLaptop};
-  gap: ${(props) => props.gapLaptop};
-
-};
-
-@media ${device.laptopL}{
-  margin: ${(props) => props.marginLaptopL};
-  height: ${(props) => props.viewHeightLaptopL};
-  gap: ${(props) => props.gapLaptopL};
- 
-};
-
-@media ${device.desktopL}{
-  margin: ${(props) => props.marginDesktopL};
-  height: ${(props) => props.viewHeightDesktopL};
-  gap: ${(props) => props.gapDesktopL};
-  padding: 40px 10px;
-};
-
-
-`;
-
-const TitleSkills = styles.h1`
-font-size: ${(props) => props.fontSize};
-margin: ${(props) => props.margin} ;
-color: #393E41 !important;
-text-align: ${(props) => props.titleAlign};
-text-shadow: ${(props) => props.textShadow};
-
-
-@media ${device.mobileS}{
-  font-Size: ${(props) => props.fontSizeMobileS};
-  margin: ${(props) => props.marginMobileS} ;
-};
-
-@media ${device.mobileM}{
-  font-Size: ${(props) => props.fontSizeMobileM};
-  margin: ${(props) => props.marginMobileM} ;
-};
-
-@media ${device.mobileL}{
-  font-Size: ${(props) => props.fontSizeMobileL};
-  margin: ${(props) => props.marginMobileL} ;
-};
-
-@media ${device.tablet}{
-  font-Size: ${(props) => props.fontSizeTablet};
-  margin: ${(props) => props.marginTablet} ;
-};
-
-@media ${device.laptop}{
-  font-Size: ${(props) => props.fontSizeLaptop};
-  margin: ${(props) => props.marginLaptop} ;
-};
-
-@media ${device.laptopL}{
-  font-Size: ${(props) => props.fontSizeLaptopL};
-  margin: ${(props) => props.marginLaptopL} ;
-};
-
-@media ${device.desktopL}{
-  font-Size: ${(props) => props.fontSizeDesktopL};
-  margin: ${(props) => props.marginDesktopL} ;
-};
-
-
-`;
-
-const TextSkills = styles.p`
-text-align: ${(props) => props.textAlign};
-margin: ${(props) => props.margin};
-gap: 0px;
-color: #393E41 !important;
-
-@media ${device.mobileS}{
-  font-Size: ${(props) => props.fontSizeMobileS};
-};
-
-@media ${device.mobileM}{
-  font-Size: ${(props) => props.fontSizeMobileM};
-};
-
-@media ${device.mobileL}{
-  font-Size: ${(props) => props.fontSizeMobileL};
-};
-
-@media ${device.tablet}{
-  font-Size: ${(props) => props.fontSizeTablet};
-};
-
-@media ${device.laptop}{
-  font-Size: ${(props) => props.fontSizeLaptop};
-};
-
-@media ${device.laptopL}{
-  font-Size: ${(props) => props.fontSizeLaptopL};
-};
-
-@media ${device.desktopL}{
-  font-Size: ${(props) => props.fontSizeDesktopL};
-};
-
-`;
 
 const About = forwardRef((props, ref) => {
   return (
@@ -277,8 +65,7 @@ const About = forwardRef((props, ref) => {
           </Title>
           <Text
             color='#393E41'
-            margin='0px 5px 20px 5px'
-            textAlign='center'
+            textAlign='justify'
             fontSizeDesktopL='35px'
             fontSizeLaptopL='20px'
             fontSizeLaptop='15px'
@@ -287,6 +74,11 @@ const About = forwardRef((props, ref) => {
             paddingMobileL='10px'
             paddingMobileM='10px'
             paddingMobileS='10px'
+            marginMobileS='0px 20px 0px 20px'
+            marginTablet='0px 50px 0px 50px'
+            marginLaptop='0px 100px 0px 100px'
+            marginLaptopL='0px 200px 0px 200px'
+            marginDesktopL='0px 300px 0px 300px'
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -366,8 +158,8 @@ const About = forwardRef((props, ref) => {
             </Text>
           </Section>
         </Section>
-        <SectionSkills flexDirection='column' alignItems='center' gap='10px'>
-          <TitleSkills
+        <Section flexDirection='column' alignItems='center' gap='10px'  justifyContent='center'>
+          <Title
             color='#393E41'
             titleAlign='center'
             textShadow='none'
@@ -381,11 +173,15 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileS='20px'
           >
             Skills
-          </TitleSkills>
-          <TextSkills
+          </Title>
+          <Text
             color='#393E41'
-            margin='0px 10px 0px 10px'
-            textAlign='center'
+            marginMobileS='0px 20px 0px 20px'
+            marginTablet='0px 50px 0px 50px'
+            marginLaptop='0px 100px 0px 100px'
+            marginLaptopL='0px 200px 0px 200px'
+            marginDesktopL='0px 300px 0px 300px'
+            textAlign='justify'
             fontSizeDesktopL='35px'
             fontSizeLaptopL='20px'
             fontSizeLaptop='15px'
@@ -398,9 +194,9 @@ const About = forwardRef((props, ref) => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
             ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua.
-          </TextSkills>
-        </SectionSkills>
-        <TextSkills
+          </Text>
+        </Section>
+        <Text
           color='#393E41'
           margin='20px'
           textAlign='center'
@@ -424,8 +220,11 @@ const About = forwardRef((props, ref) => {
           >
             View My Resume
           </a>
-        </TextSkills>
-        <ContainerSkills
+        </Text>
+        <ContainerStyle
+        justifyContent='center'
+        display='flex'
+          flexWrap='wrap'
           flexDirection='row'
           alignItems='center'
           gapDesktopL='60px'
@@ -435,8 +234,14 @@ const About = forwardRef((props, ref) => {
           gapMobileL='30px'
           gapMobileM='15px'
           gapMobileS='7px'
+          marginDesktopL='30px 0px 40px 0px'
+          marginLaptopL='0px 40px 0px 40px'
+          marginLaptop='0px 20px 0px 20px'
         >
-          <ContainerSkills
+          <ContainerStyle
+          justifyContent='center'
+          display='flex'
+           flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -447,9 +252,12 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
+             marginDesktopL='30px 0px 40px 0px'
+            marginLaptopL='0px 40px 0px 40px'
+            marginLaptop='0px 20px 0px 20px'
           >
             <SiHtml5 className='icon' size={'3em'} />
-            <TextSkills
+            <Text
               color='#393E41'
               margin='0px 0px 0px 0px'
               textAlign='center'
@@ -457,9 +265,12 @@ const About = forwardRef((props, ref) => {
               fontSizeLaptop='15px'
             >
               HTML
-            </TextSkills>
-          </ContainerSkills>
-          <ContainerSkills
+            </Text>
+          </ContainerStyle>
+          <ContainerStyle
+          justifyContent='center'
+          display='flex'
+           flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -470,9 +281,12 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
+             marginDesktopL='30px 0px 40px 0px'
+            marginLaptopL='0px 40px 0px 40px'
+            marginLaptop='0px 20px 0px 20px'
           >
             <SiCss3 className='icon' size={'3em'} />
-            <TextSkills
+            <Text
               color='#393E41'
               margin='0px 0px 0px 0px'
               textAlign='center'
@@ -480,9 +294,12 @@ const About = forwardRef((props, ref) => {
               fontSizeLaptop='15px'
             >
               CSS
-            </TextSkills>
-          </ContainerSkills>
-          <ContainerSkills
+            </Text>
+          </ContainerStyle>
+          <ContainerStyle
+          justifyContent='center'
+          display='flex'
+           flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -493,9 +310,12 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
+             marginDesktopL='30px 0px 40px 0px'
+            marginLaptopL='0px 40px 0px 40px'
+            marginLaptop='0px 20px 0px 20px'
           >
             <SiJavascript className='icon' size={'3em'} />
-            <TextSkills
+            <Text
               color='#393E41'
               margin='0px 0px 0px 0px'
               textAlign='center'
@@ -503,9 +323,12 @@ const About = forwardRef((props, ref) => {
               fontSizeLaptop='15px'
             >
               JavaScript
-            </TextSkills>
-          </ContainerSkills>
-          <ContainerSkills
+            </Text>
+          </ContainerStyle>
+          <ContainerStyle
+          justifyContent='center'
+          display='flex'
+           flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -516,9 +339,12 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
+             marginDesktopL='30px 0px 40px 0px'
+            marginLaptopL='0px 40px 0px 40px'
+            marginLaptop='0px 20px 0px 20px'
           >
             <SiReact className='icon' size={'3em'} />
-            <TextSkills
+            <Text
               color='#393E41'
               margin='0px 0px 0px 0px'
               textAlign='center'
@@ -526,9 +352,12 @@ const About = forwardRef((props, ref) => {
               fontSizeLaptop='15px'
             >
               React
-            </TextSkills>
-          </ContainerSkills>
-          <ContainerSkills
+            </Text>
+          </ContainerStyle>
+          <ContainerStyle
+          justifyContent='center'
+          display='flex'
+           flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -539,9 +368,12 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
+             marginDesktopL='30px 0px 40px 0px'
+            marginLaptopL='0px 40px 0px 40px'
+            marginLaptop='0px 20px 0px 20px'
           >
             <SiBootstrap className='icon' size={'3em'} />
-            <TextSkills
+            <Text
               color='#393E41'
               margin='0px 0px 0px 0px'
               textAlign='center'
@@ -549,9 +381,12 @@ const About = forwardRef((props, ref) => {
               fontSizeLaptop='15px'
             >
               Bootstrap
-            </TextSkills>
-          </ContainerSkills>
-          <ContainerSkills
+            </Text>
+          </ContainerStyle>
+          <ContainerStyle
+          justifyContent='center'
+          display='flex'
+           flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -562,9 +397,12 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
+             marginDesktopL='30px 0px 40px 0px'
+            marginLaptopL='0px 40px 0px 40px'
+            marginLaptop='0px 20px 0px 20px'
           >
             <SiStyledcomponents className='icon' size={'3em'} />
-            <TextSkills
+            <Text
               color='#393E41'
               margin='0px 0px 0px 0px'
               textAlign='center'
@@ -572,9 +410,12 @@ const About = forwardRef((props, ref) => {
               fontSizeLaptop='15px'
             >
               Style <br /> Components
-            </TextSkills>
-          </ContainerSkills>
-          <ContainerSkills
+            </Text>
+          </ContainerStyle>
+          <ContainerStyle
+          justifyContent='center'
+          display='flex'
+           flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -585,9 +426,12 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
+             marginDesktopL='30px 0px 40px 0px'
+            marginLaptopL='0px 40px 0px 40px'
+            marginLaptop='0px 20px 0px 20px'
           >
             <SiNodedotjs className='icon' size={'3em'} />
-            <TextSkills
+            <Text
               color='#393E41'
               margin='0px 0px 0px 0px'
               textAlign='center'
@@ -595,9 +439,12 @@ const About = forwardRef((props, ref) => {
               fontSizeLaptop='15px'
             >
               NodeJS
-            </TextSkills>
-          </ContainerSkills>
-          <ContainerSkills
+            </Text>
+          </ContainerStyle>
+          <ContainerStyle
+          justifyContent='center'
+          display='flex'
+           flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -608,9 +455,12 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
+             marginDesktopL='30px 0px 40px 0px'
+            marginLaptopL='0px 40px 0px 40px'
+            marginLaptop='0px 20px 0px 20px'
           >
             <SiMongodb className='icon' size={'3em'} />
-            <TextSkills
+            <Text
               color='#393E41'
               margin='0px 0px 0px 0px'
               textAlign='center'
@@ -618,9 +468,12 @@ const About = forwardRef((props, ref) => {
               fontSizeLaptop='15px'
             >
               MongoDB
-            </TextSkills>
-          </ContainerSkills>
-          <ContainerSkills
+            </Text>
+          </ContainerStyle>
+          <ContainerStyle
+          justifyContent='center'
+          display='flex'
+           flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -631,9 +484,12 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.6em'
             fontSizeMobileS='0.7em'
+             marginDesktopL='30px 0px 40px 0px'
+            marginLaptopL='0px 40px 0px 40px'
+            marginLaptop='0px 20px 0px 20px'
           >
             <SiNextdotjs className='icon' size={'3em'} />
-            <TextSkills
+            <Text
               color='#393E41'
               margin='0px 0px 0px 0px'
               textAlign='center'
@@ -641,9 +497,12 @@ const About = forwardRef((props, ref) => {
               fontSizeLaptop='15px'
             >
               NextJS
-            </TextSkills>
-          </ContainerSkills>
-          <ContainerSkills
+            </Text>
+          </ContainerStyle>
+          <ContainerStyle
+          justifyContent='center'
+          display='flex'
+           flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -654,9 +513,12 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
+             marginDesktopL='30px 0px 40px 0px'
+            marginLaptopL='0px 40px 0px 40px'
+            marginLaptop='0px 20px 0px 20px'
           >
             <SiStorybook className='icon' size={'3em'} />
-            <TextSkills
+            <Text
               color='#393E41'
               margin='0px 0px 0px 0px'
               textAlign='center'
@@ -664,9 +526,9 @@ const About = forwardRef((props, ref) => {
               fontSizeLaptop='15px'
             >
               Storybook
-            </TextSkills>
-          </ContainerSkills>
-        </ContainerSkills>
+            </Text>
+          </ContainerStyle>
+        </ContainerStyle>
       </ContainerStyle>
     </Container>
   );
