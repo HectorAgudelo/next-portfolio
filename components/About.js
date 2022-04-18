@@ -19,8 +19,6 @@ import {
   SiStorybook,
 } from 'react-icons/si';
 
-
-
 const About = forwardRef((props, ref) => {
   return (
     <Container fluid style={{ padding: '0px' }} ref={ref} {...props}>
@@ -158,7 +156,12 @@ const About = forwardRef((props, ref) => {
             </Text>
           </Section>
         </Section>
-        <Section flexDirection='column' alignItems='center' gap='10px'  justifyContent='center'>
+        <Section
+          flexDirection='column'
+          alignItems='center'
+          gap='10px'
+          justifyContent='center'
+        >
           <Title
             color='#393E41'
             titleAlign='center'
@@ -214,7 +217,7 @@ const About = forwardRef((props, ref) => {
               textDecoration: 'none',
               fontWeight: 'bold',
             }}
-            href='https://docs.google.com/document/d/1-WiqkWGrUnhsf7YyjKerPKAkakKRrd5j/edit?usp=sharing&ouid=109866500808769579371&rtpof=true&sd=true'
+            href='https://docs.google.com/document/d/1rY7-ZfdkOIp6-z6Sy3WkdNmhuTSUlHk6/edit?usp=sharing&ouid=109866500808769579371&rtpof=true&sd=true'
             target='_blank'
             rel='noreferrer noopener'
           >
@@ -222,8 +225,8 @@ const About = forwardRef((props, ref) => {
           </a>
         </Text>
         <ContainerStyle
-        justifyContent='center'
-        display='flex'
+          justifyContent='center'
+          display='flex'
           flexWrap='wrap'
           flexDirection='row'
           alignItems='center'
@@ -239,9 +242,9 @@ const About = forwardRef((props, ref) => {
           marginLaptop='0px 20px 0px 20px'
         >
           <ContainerStyle
-          justifyContent='center'
-          display='flex'
-           flexWrap='wrap'
+            justifyContent='center'
+            display='flex'
+            flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -252,7 +255,7 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
-             marginDesktopL='30px 0px 40px 0px'
+            marginDesktopL='30px 0px 40px 0px'
             marginLaptopL='0px 40px 0px 40px'
             marginLaptop='0px 20px 0px 20px'
           >
@@ -268,9 +271,9 @@ const About = forwardRef((props, ref) => {
             </Text>
           </ContainerStyle>
           <ContainerStyle
-          justifyContent='center'
-          display='flex'
-           flexWrap='wrap'
+            justifyContent='center'
+            display='flex'
+            flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -281,7 +284,7 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
-             marginDesktopL='30px 0px 40px 0px'
+            marginDesktopL='30px 0px 40px 0px'
             marginLaptopL='0px 40px 0px 40px'
             marginLaptop='0px 20px 0px 20px'
           >
@@ -297,9 +300,9 @@ const About = forwardRef((props, ref) => {
             </Text>
           </ContainerStyle>
           <ContainerStyle
-          justifyContent='center'
-          display='flex'
-           flexWrap='wrap'
+            justifyContent='center'
+            display='flex'
+            flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -310,7 +313,7 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
-             marginDesktopL='30px 0px 40px 0px'
+            marginDesktopL='30px 0px 40px 0px'
             marginLaptopL='0px 40px 0px 40px'
             marginLaptop='0px 20px 0px 20px'
           >
@@ -326,9 +329,9 @@ const About = forwardRef((props, ref) => {
             </Text>
           </ContainerStyle>
           <ContainerStyle
-          justifyContent='center'
-          display='flex'
-           flexWrap='wrap'
+            justifyContent='center'
+            display='flex'
+            flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -339,7 +342,7 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
-             marginDesktopL='30px 0px 40px 0px'
+            marginDesktopL='30px 0px 40px 0px'
             marginLaptopL='0px 40px 0px 40px'
             marginLaptop='0px 20px 0px 20px'
           >
@@ -355,9 +358,9 @@ const About = forwardRef((props, ref) => {
             </Text>
           </ContainerStyle>
           <ContainerStyle
-          justifyContent='center'
-          display='flex'
-           flexWrap='wrap'
+            justifyContent='center'
+            display='flex'
+            flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -368,7 +371,7 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
-             marginDesktopL='30px 0px 40px 0px'
+            marginDesktopL='30px 0px 40px 0px'
             marginLaptopL='0px 40px 0px 40px'
             marginLaptop='0px 20px 0px 20px'
           >
@@ -384,9 +387,9 @@ const About = forwardRef((props, ref) => {
             </Text>
           </ContainerStyle>
           <ContainerStyle
-          justifyContent='center'
-          display='flex'
-           flexWrap='wrap'
+            justifyContent='center'
+            display='flex'
+            flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -397,7 +400,7 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
-             marginDesktopL='30px 0px 40px 0px'
+            marginDesktopL='30px 0px 40px 0px'
             marginLaptopL='0px 40px 0px 40px'
             marginLaptop='0px 20px 0px 20px'
           >
@@ -413,9 +416,9 @@ const About = forwardRef((props, ref) => {
             </Text>
           </ContainerStyle>
           <ContainerStyle
-          justifyContent='center'
-          display='flex'
-           flexWrap='wrap'
+            justifyContent='center'
+            display='flex'
+            flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -426,7 +429,7 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
-             marginDesktopL='30px 0px 40px 0px'
+            marginDesktopL='30px 0px 40px 0px'
             marginLaptopL='0px 40px 0px 40px'
             marginLaptop='0px 20px 0px 20px'
           >
@@ -442,9 +445,9 @@ const About = forwardRef((props, ref) => {
             </Text>
           </ContainerStyle>
           <ContainerStyle
-          justifyContent='center'
-          display='flex'
-           flexWrap='wrap'
+            justifyContent='center'
+            display='flex'
+            flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -455,7 +458,7 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
-             marginDesktopL='30px 0px 40px 0px'
+            marginDesktopL='30px 0px 40px 0px'
             marginLaptopL='0px 40px 0px 40px'
             marginLaptop='0px 20px 0px 20px'
           >
@@ -471,9 +474,9 @@ const About = forwardRef((props, ref) => {
             </Text>
           </ContainerStyle>
           <ContainerStyle
-          justifyContent='center'
-          display='flex'
-           flexWrap='wrap'
+            justifyContent='center'
+            display='flex'
+            flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -484,7 +487,7 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.6em'
             fontSizeMobileS='0.7em'
-             marginDesktopL='30px 0px 40px 0px'
+            marginDesktopL='30px 0px 40px 0px'
             marginLaptopL='0px 40px 0px 40px'
             marginLaptop='0px 20px 0px 20px'
           >
@@ -500,9 +503,9 @@ const About = forwardRef((props, ref) => {
             </Text>
           </ContainerStyle>
           <ContainerStyle
-          justifyContent='center'
-          display='flex'
-           flexWrap='wrap'
+            justifyContent='center'
+            display='flex'
+            flexWrap='wrap'
             flexDirection='column'
             alignItems='center'
             gap='0px'
@@ -513,7 +516,7 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileL='0.7em'
             fontSizeMobileM='0.7em'
             fontSizeMobileS='0.7em'
-             marginDesktopL='30px 0px 40px 0px'
+            marginDesktopL='30px 0px 40px 0px'
             marginLaptopL='0px 40px 0px 40px'
             marginLaptop='0px 20px 0px 20px'
           >
