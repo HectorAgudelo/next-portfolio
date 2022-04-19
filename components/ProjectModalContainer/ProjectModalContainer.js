@@ -295,10 +295,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
           fontSizeMobileM='15px'
           fontSizeMobileS='15px'
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+        I enjoy spending time creating web apps, and exploring new technologies. Check out a couple of my most recent projects. If you would like to know more about my projects, I invite you to visit my GitHub.
         </Text>
       </Section>
       <ContainerStyle
@@ -315,6 +312,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
         <ProjectModalRender
           img={'/A.png'}
           tittle={'Restaurant Website'}
+          description={'A website for a restaurant with menu information, a gallery showing the place, and links to other relevant information related to reservations and online ordering'}
           codeButton={
             <Button
               variant='light'
@@ -341,6 +339,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
         <ProjectModalRender
           img={'/ChatRoom.png'}
           tittle={'Chat App'}
+          description={'A chat application in which users pick among 3 different chat rooms. The app stores the most recent conversations, and notify users when a user enters or leaves the chat.'}
           codeButton={
             <Button
               variant='light'

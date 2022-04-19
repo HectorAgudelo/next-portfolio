@@ -193,10 +193,7 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileM='15px'
             fontSizeMobileS='15px'
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+           These are some of the technologies I have worked with on personal and professional projects.
           </Text>
         </Section>
         <Text
