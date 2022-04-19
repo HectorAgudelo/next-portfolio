@@ -78,7 +78,7 @@ const About = forwardRef((props, ref) => {
             marginLaptopL='0px 200px 0px 200px'
             marginDesktopL='0px 300px 0px 300px'
           >
-            I code and build websites and web applications using modern React and ES6 JavaScript.
+            I code and build websites as well as web applications, using modern React and ES6 JavaScript.
           </Text>
         </Section>
         <Section
@@ -140,7 +140,8 @@ const About = forwardRef((props, ref) => {
               fontSizeMobileM='15px'
               fontSizeMobileS='15px'
             >
-              I am a software engineer with a solid foundation in JavaScript principals and front-end web development. Experienced in developing web applications with well-liked technologies such React, Next.js, Git and Style Components. Furthermore; I possess transferable collaborative, customer service, and attention to details experience. Confidently learn and get comfortable using new technologies relevant to the job at hand. Ready to apply my enthusiasm for coding and learning to a talented engineering team to create magical products.
+              
+        I am a Software Engineer with a solid foundation in JavaScript principals and front-end web development. Experienced in developing web applications with well-liked technologies such as React, Next.js, Git and Style Components. Furthermore, I possess transferable collaborative, customer service, and attention to details experience. I confidently learn and get comfortable using new technologies relevant to the job at hand. <br/>I am ready to apply my enthusiasm for coding and able to learn to be part of a talented engineering team to create magical products.
             </Text>
           </Section>
         </Section>
