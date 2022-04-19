@@ -78,8 +78,7 @@ const About = forwardRef((props, ref) => {
             marginLaptopL='0px 200px 0px 200px'
             marginDesktopL='0px 300px 0px 300px'
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            I code and build websites and web applications using modern React and ES6 JavaScript.
           </Text>
         </Section>
         <Section
@@ -141,18 +140,7 @@ const About = forwardRef((props, ref) => {
               fontSizeMobileM='15px'
               fontSizeMobileS='15px'
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Integer enim neque volutpat ac. Nibh cras pulvinar mattis nunc sed
-              blandit libero. Nunc scelerisque viverra mauris in aliquam sem
-              fringilla ut. Faucibus ornare suspendisse sed nisi lacus sed
-              viverra. Porta nibh venenatis cras sed felis eget velit aliquet
-              sagittis. Urna molestie at elementum eu. Tempus quam pellentesque
-              nec nam aliquam sem et tortor. Consectetur a erat nam at lectus
-              urna duis. Nunc sed velit dignissim sodales. Cras pulvinar mattis
-              nunc sed blandit libero. Ipsum consequat nisl vel pretium lectus
-              quam. Pretium quam vulputate dignissim suspendisse in est. Donec
-              ac odio tempor orci dapibus ultrices in.
+              I am a software engineer with a solid foundation in JavaScript principals and front-end web development. Experienced in developing web applications with well-liked technologies such React, Next.js, Git and Style Components. Furthermore; I possess transferable collaborative, customer service, and attention to details experience. Confidently learn and get comfortable using new technologies relevant to the job at hand. Ready to apply my enthusiasm for coding and learning to a talented engineering team to create magical products.
             </Text>
           </Section>
         </Section>
