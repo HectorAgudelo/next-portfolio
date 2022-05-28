@@ -183,6 +183,7 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileS='15px'
           >
            These are some of the technologies I have worked with on personal and professional projects.
+           
           </Text>
         </Section>
         <Text

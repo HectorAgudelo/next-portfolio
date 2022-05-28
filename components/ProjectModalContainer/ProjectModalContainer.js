@@ -328,7 +328,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
             <Button
               variant='light'
               className={`${style.customColor} w-25 mx-2`}
-              href='https://antidoteny.com/'
+              href='https://restaurant-22fszzy1r-hectoragudelo.vercel.app/'
               target='_blank'
               rel='noreferrer noopener'
             >
