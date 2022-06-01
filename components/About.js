@@ -204,7 +204,7 @@ const About = forwardRef((props, ref) => {
               textDecoration: 'none',
               fontWeight: 'bold',
             }}
-            href='https://docs.google.com/document/d/1rY7-ZfdkOIp6-z6Sy3WkdNmhuTSUlHk6/edit?usp=sharing&ouid=109866500808769579371&rtpof=true&sd=true'
+            href='https://app.luminpdf.com/viewer/6297f96f35bf1a581452a453'
             target='_blank'
             rel='noreferrer noopener'
           >
