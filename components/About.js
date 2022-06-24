@@ -141,7 +141,7 @@ const About = forwardRef((props, ref) => {
               fontSizeMobileS='15px'
             >
               
-        I am a Software Engineer with a solid foundation in JavaScript principals and front-end web development. Experienced in developing web applications with well-liked technologies such as React, Next.js, Git and Style Components. Furthermore, I possess transferable collaborative, customer service, and attention to details experience. I confidently learn and get comfortable using new technologies relevant to the job at hand. <br/>I am ready to apply my enthusiasm for coding and able to learn to be part of a talented engineering team to create magical products.
+              Software engineer with a solid foundation in JavaScript principals and front-end web development. Experienced in developing web applications with well-known technologies such as React, Next.js, Git and Style Components. I'm proficient in collaboration and team work with a strong devotion to customer satisfaction.  My enthusiasm and attention to detail helps me easily become comfortable with new technologies. I'm ready to apply my enthusiasm for coding and learning to a talented engineering team to create new, innovative products.
             </Text>
           </Section>
         </Section>
@@ -204,7 +204,7 @@ const About = forwardRef((props, ref) => {
               textDecoration: 'none',
               fontWeight: 'bold',
             }}
-            href='https://app.luminpdf.com/viewer/6297f96f35bf1a581452a453'
+            href='https://app.luminpdf.com/viewer/62b61e731b17ca487d1cd435'
             target='_blank'
             rel='noreferrer noopener'
           >
