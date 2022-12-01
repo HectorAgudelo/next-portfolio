@@ -312,7 +312,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
         <ProjectModalRender
           img={'/A.png'}
           tittle={'Restaurant Website'}
-          description={'A website for a restaurant with menu information, a gallery showing the place, and links to other relevant information related to reservations and online ordering'}
+          description={'A restaurant website with menu information, a gallery showing food plates, and important links to other relevant information related to reservations and online ordering'}
           codeButton={
             <Button
               variant='light'
@@ -339,7 +339,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
         <ProjectModalRender
           img={'/ChatRoom.png'}
           tittle={'Chat App'}
-          description={'A chat application in which users pick among 3 different chat rooms. The app stores the most recent conversations, and notify users when a user enters or leaves the chat.'}
+          description={'A chat application consisting on three different chat rooms. The app stores the most recent conversations, and notify users when a user enters or leaves the chat.'}
           codeButton={
             <Button
               variant='light'
@@ -349,6 +349,33 @@ const ProjectModalContainer = forwardRef((props, ref) => {
               rel='noreferrer noopener'
             >
               Code
+            </Button>
+          }
+        />
+        <ProjectModalRender
+          img={'/handyWork.png'}
+          tittle={'Work Order System'}
+          description={'A web app that allows users to look for or provide services according the user needs or skills. Create an account and start looking for a service provider or provide a service.  '}
+          codeButton={
+            <Button
+              variant='light'
+              className={`${style.customColor} w-25`}
+              href='https://github.com/chingu-voyages/v41-geckos-team-08'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              Code
+            </Button>
+          }
+          appButton={
+            <Button
+              variant='light'
+              className={`${style.customColor} w-25 mx-2`}
+              href='https://handywork-clients.netlify.app/'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              App
             </Button>
           }
         />
