@@ -266,7 +266,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
       >
         <Title
           titleAlign='center'
-          textShadow='2px 5px 0 rgba(0,0,0,0.2)'
+          textShadow='none'
           marginDesktopL='30px 0px 40px 0px'
           marginLaptopL='30px 0px 20px 0px'
           marginLaptop=' 30px 0px 10px 0px'
@@ -295,7 +295,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
           fontSizeMobileM='15px'
           fontSizeMobileS='15px'
         >
-        I enjoy spending time creating web apps, and exploring new technologies. Check out a couple of my most recent projects. If you would like to know more about my projects, I invite you to visit my GitHub.
+        Check out my most recent projects below and on GitHub.
         </Text>
       </Section>
       <ContainerStyle

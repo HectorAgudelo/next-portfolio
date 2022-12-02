@@ -16,7 +16,7 @@ const HomeComp = forwardRef((props, ref) => {
         display='flex'
         flexDirection='column'
         justifyContent='center'
-        background='linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.6)), url("/background.module.jpeg")'
+        background='linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,1)), url("/background.module.jpeg")'
         backgroundSizeMobileS='cover'
         heightMobileS='100vh'
         widthMobileS='100%'

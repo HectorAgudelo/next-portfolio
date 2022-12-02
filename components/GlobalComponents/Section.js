@@ -9,6 +9,7 @@ background: ${(props) => props.background};
 gap: ${(props) => props.gap};
 align-items:  ${(props) => props.alignItems};
 
+
 @media ${device.mobileS}{
   background-size: ${(props) => props.backgroundSizeMobileS};;
   height: ${(props) => props.heightMobileS};

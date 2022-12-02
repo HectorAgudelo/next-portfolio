@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <SSRProvider>
       <Head>
+      <title>Hector Agudelo|Frontend Software Engineer</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <Component {...pageProps} />

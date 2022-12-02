@@ -17,6 +17,7 @@ import {
   SiMongodb,
   SiNextdotjs,
   SiStorybook,
+  SiTailwindcss
 } from 'react-icons/si';
 
 const About = forwardRef((props, ref) => {
@@ -43,7 +44,7 @@ const About = forwardRef((props, ref) => {
           <Title
             color='#393E41'
             titleAlign='center'
-            textShadow='2px 5px 0 rgba(0,0,0,0.2)'
+            textShadow='none'
             marginDesktopL='30px 0px 40px 0px'
             marginLaptopL='30px 0px 20px 0px'
             marginLaptop='30px 0px 10px 0px'
@@ -97,7 +98,7 @@ const About = forwardRef((props, ref) => {
           marginMobileS='0px 50px'
           gap='10px'
         >
-          <Image src='/Self.jpg' alt={'Myself'} />
+          <Image src='/self2.jpg' alt={'Myself'} />
           <Section
             display='flex'
             justifyContent='center'
@@ -255,6 +256,35 @@ const About = forwardRef((props, ref) => {
               fontSizeLaptop='15px'
             >
               HTML
+            </Text>
+          </ContainerStyle>
+          <ContainerStyle
+            justifyContent='center'
+            display='flex'
+            flexWrap='wrap'
+            flexDirection='column'
+            alignItems='center'
+            gap='0px'
+            fontSizeDesktopL='2em'
+            fontSizeLaptopL='1em'
+            fontSizeLaptop='0.9em'
+            fontSizeTablet='0.7em'
+            fontSizeMobileL='0.7em'
+            fontSizeMobileM='0.7em'
+            fontSizeMobileS='0.7em'
+            marginDesktopL='30px 0px 40px 0px'
+            marginLaptopL='0px 40px 0px 40px'
+            marginLaptop='0px 20px 0px 20px'
+          >
+            <SiTailwindcss className='icon' size={'3em'} />
+            <Text
+              color='#393E41'
+              margin='0px 0px 0px 0px'
+              textAlign='center'
+              fontSizeDesktopL='25px'
+              fontSizeLaptop='15px'
+            >
+             Tailwindcss
             </Text>
           </ContainerStyle>
           <ContainerStyle
@@ -487,35 +517,6 @@ const About = forwardRef((props, ref) => {
               fontSizeLaptop='15px'
             >
               NextJS
-            </Text>
-          </ContainerStyle>
-          <ContainerStyle
-            justifyContent='center'
-            display='flex'
-            flexWrap='wrap'
-            flexDirection='column'
-            alignItems='center'
-            gap='0px'
-            fontSizeDesktopL='2em'
-            fontSizeLaptopL='1em'
-            fontSizeLaptop='0.9em'
-            fontSizeTablet='0.7em'
-            fontSizeMobileL='0.7em'
-            fontSizeMobileM='0.7em'
-            fontSizeMobileS='0.7em'
-            marginDesktopL='30px 0px 40px 0px'
-            marginLaptopL='0px 40px 0px 40px'
-            marginLaptop='0px 20px 0px 20px'
-          >
-            <SiStorybook className='icon' size={'3em'} />
-            <Text
-              color='#393E41'
-              margin='0px 0px 0px 0px'
-              textAlign='center'
-              fontSizeDesktopL='25px'
-              fontSizeLaptop='15px'
-            >
-              Storybook
             </Text>
           </ContainerStyle>
         </ContainerStyle>

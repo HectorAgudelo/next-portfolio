@@ -5,7 +5,10 @@ export const ProjectModalRender = (props) => {
   return (
     <>
       <Card style={{ width: '30rem' }}>
-        <Card.Img variant='top' src={props.img} />
+        <div >
+           <Card.Img style={{objectFit:'fit'}} variant='top' src={props.img} />
+        </div>
+       
         <Card.Body>
           <Card.Title>{props.tittle}</Card.Title>
           <Card.Text>

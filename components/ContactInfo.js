@@ -217,7 +217,7 @@ const ContactInfo = forwardRef((props, ref) => {
           marginLaptop='20px'
           marginTablet='20px'
           marginMobileL='20px'
-          textShadow='2px 5px 0 rgba(0,0,0,0.2)'
+          textShadow='none'
         >
           Contact
         </Title>
