@@ -18,3 +18,13 @@
     background: #8b4671 !important;
     
 }
+
+.a {
+    color: #393e41;
+    text-decoration: none;
+  }
+
+.a:hover{
+    color: #8b4671;
+    font-weight: bolder;
+}

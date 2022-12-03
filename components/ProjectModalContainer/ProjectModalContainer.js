@@ -295,7 +295,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
           fontSizeMobileM='15px'
           fontSizeMobileS='15px'
         >
-        Check out my most recent projects below and on GitHub.
+        Check out my most recent projects below and on <a className={style.a} href='https://github.com/HectorAgudelo' target='_blank' rel='noreferrer noopener'>GitHub</a>.
         </Text>
       </Section>
       <ContainerStyle
@@ -312,7 +312,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
         <ProjectModalRender
           img={'/A.png'}
           tittle={'Restaurant Website'}
-          description={'A restaurant website with menu information, a gallery showing food plates, and important links to other relevant information related to reservations and online ordering'}
+          description={'A restaurant website with menu information, a gallery showing food plates, and important links to other relevant information related to reservations and online ordering.'}
           codeButton={
             <Button
               variant='light'

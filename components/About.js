@@ -142,7 +142,7 @@ const About = forwardRef((props, ref) => {
               fontSizeMobileS='15px'
             >
               
-              Software engineer with a solid foundation in JavaScript principals and front-end web development. Experienced in developing web applications with well-known technologies such as React, Next.js, Git and Style Components. I am proficient in collaboration and team work with a strong devotion to customer satisfaction.  My enthusiasm and attention to detail helps me easily become comfortable with new technologies. I am ready to apply my enthusiasm for coding and learning to a talented engineering team to create new, innovative products.
+              I am a software engineer specializing in front-end development. Before that, I worked in the food and hospitality industry teaming up with different types of coworkers in order to understand, satisfy and provide great experiences to over a hundred clients a day. I have brought the same focus on detail to mastering frontend technologies by building projects with remote teams and creating products that will automate routine tasks such as finding a handyman. I am ready to bring my client-facing experience and coding skills to a talented engineering team to create people-oriented products.
             </Text>
           </Section>
         </Section>
