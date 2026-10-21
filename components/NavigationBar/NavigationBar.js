@@ -62,6 +62,13 @@ window.addEventListener('scroll', changeBackground);
             </Nav.Link>
             <Nav.Link
               className={style.navText}
+              href='#Experience'
+              onClick={props.experience}
+            >
+              Experience
+            </Nav.Link>
+            <Nav.Link
+              className={style.navText}
               href='#Projects'
               onClick={props.projects}
             >

@@ -11,14 +11,29 @@ import {
   SiCss3,
   SiHtml5,
   SiJavascript,
-  SiBootstrap,
+  SiTypescript,
+  SiNextdotjs,
+  SiExpo,
+  SiTailwindcss,
   SiStyledcomponents,
   SiNodedotjs,
-  SiMongodb,
-  SiNextdotjs,
-  SiStorybook,
-  SiTailwindcss
+  SiAmazonaws,
 } from 'react-icons/si';
+
+const skills = [
+  { icon: SiTypescript, label: 'TypeScript' },
+  { icon: SiJavascript, label: 'JavaScript' },
+  { icon: SiReact, label: 'React' },
+  { icon: SiNextdotjs, label: 'Next.js' },
+  { icon: SiReact, label: 'React Native' },
+  { icon: SiExpo, label: 'Expo' },
+  { icon: SiHtml5, label: 'HTML' },
+  { icon: SiCss3, label: 'CSS' },
+  { icon: SiTailwindcss, label: 'Tailwind CSS' },
+  { icon: SiStyledcomponents, label: 'Styled Components' },
+  { icon: SiNodedotjs, label: 'Node.js' },
+  { icon: SiAmazonaws, label: 'AWS S3' },
+];
 
 const About = forwardRef((props, ref) => {
   return (
@@ -64,7 +79,7 @@ const About = forwardRef((props, ref) => {
           </Title>
           <Text
             color='#393E41'
-            textAlign='justify'
+            textAlign='center'
             fontSizeDesktopL='35px'
             fontSizeLaptopL='20px'
             fontSizeLaptop='15px'
@@ -79,7 +94,7 @@ const About = forwardRef((props, ref) => {
             marginLaptopL='0px 200px 0px 200px'
             marginDesktopL='0px 300px 0px 300px'
           >
-            I code and build websites as well as web applications, using modern React and ES6 JavaScript.
+            I build web and mobile apps with React, Next.js, React Native and TypeScript.
           </Text>
         </Section>
         <Section
@@ -98,7 +113,7 @@ const About = forwardRef((props, ref) => {
           marginMobileS='0px 50px'
           gap='10px'
         >
-          <Image src='/self2.jpg' alt={'Myself'} />
+          <Image src='/self2.jpg' alt={'Hector Agudelo'} />
           <Section
             display='flex'
             justifyContent='center'
@@ -127,7 +142,7 @@ const About = forwardRef((props, ref) => {
               textShadow='none'
               margin='0px 0px 0px 0px'
             >
-              Frontend Developer
+              Frontend Software Engineer
             </Title>
             <Text
               color='#393E41'
@@ -141,8 +156,10 @@ const About = forwardRef((props, ref) => {
               fontSizeMobileM='15px'
               fontSizeMobileS='15px'
             >
-              
-              I am a software engineer specializing in front-end development. Before that, I worked in the food and hospitality industry teaming up with different types of coworkers in order to understand, satisfy and provide great experiences to over a hundred clients a day. I have brought the same focus on detail to mastering frontend technologies by building projects with remote teams and creating products that will automate routine tasks such as finding a handyman. I am ready to bring my client-facing experience and coding skills to a talented engineering team to create people-oriented products.
+              I am a frontend engineer with about three years of startup and remote team experience. At Pleyr (AthletiFi), I work on a video-centric social platform for youth athletes with Next.js and TypeScript, and on the AWS S3 setup behind its match videos. I also build FlowFit, a React Native fitness app, and work with remote teams through Chingu.
+              <br />
+              <br />
+              Before software, I worked in food and hospitality, taking care of over a hundred guests a day. That taught me attention to detail, teamwork, and to always think about the person on the other side. I bring the same mindset to the products I build.
             </Text>
           </Section>
         </Section>
@@ -174,7 +191,7 @@ const About = forwardRef((props, ref) => {
             marginLaptop='0px 100px 0px 100px'
             marginLaptopL='0px 200px 0px 200px'
             marginDesktopL='0px 300px 0px 300px'
-            textAlign='justify'
+            textAlign='center'
             fontSizeDesktopL='35px'
             fontSizeLaptopL='20px'
             fontSizeLaptop='15px'
@@ -183,8 +200,7 @@ const About = forwardRef((props, ref) => {
             fontSizeMobileM='15px'
             fontSizeMobileS='15px'
           >
-           These are some of the technologies I have worked with on personal and professional projects.
-           
+            The technologies I use in my current work and projects.
           </Text>
         </Section>
         <Text
@@ -205,7 +221,7 @@ const About = forwardRef((props, ref) => {
               textDecoration: 'none',
               fontWeight: 'bold',
             }}
-            href='https://app.luminpdf.com/viewer/6394a70e5f40650b6b1b5456'
+            href='/Hector_Agudelo_Resume.pdf'
             target='_blank'
             rel='noreferrer noopener'
           >
@@ -229,296 +245,38 @@ const About = forwardRef((props, ref) => {
           marginLaptopL='0px 40px 0px 40px'
           marginLaptop='0px 20px 0px 20px'
         >
-          <ContainerStyle
-            justifyContent='center'
-            display='flex'
-            flexWrap='wrap'
-            flexDirection='column'
-            alignItems='center'
-            gap='0px'
-            fontSizeDesktopL='2em'
-            fontSizeLaptopL='1em'
-            fontSizeLaptop='0.9em'
-            fontSizeTablet='0.7em'
-            fontSizeMobileL='0.7em'
-            fontSizeMobileM='0.7em'
-            fontSizeMobileS='0.7em'
-            marginDesktopL='30px 0px 40px 0px'
-            marginLaptopL='0px 40px 0px 40px'
-            marginLaptop='0px 20px 0px 20px'
-          >
-            <SiHtml5 className='icon' size={'3em'} />
-            <Text
-              color='#393E41'
-              margin='0px 0px 0px 0px'
-              textAlign='center'
-              fontSizeDesktopL='25px'
-              fontSizeLaptop='15px'
+          {skills.map(({ icon: Icon, label }) => (
+            <ContainerStyle
+              key={label}
+              justifyContent='center'
+              display='flex'
+              flexWrap='wrap'
+              flexDirection='column'
+              alignItems='center'
+              gap='0px'
+              fontSizeDesktopL='2em'
+              fontSizeLaptopL='1em'
+              fontSizeLaptop='0.9em'
+              fontSizeTablet='0.7em'
+              fontSizeMobileL='0.7em'
+              fontSizeMobileM='0.7em'
+              fontSizeMobileS='0.7em'
+              marginDesktopL='30px 0px 40px 0px'
+              marginLaptopL='0px 40px 0px 40px'
+              marginLaptop='0px 20px 0px 20px'
             >
-              HTML
-            </Text>
-          </ContainerStyle>
-          <ContainerStyle
-            justifyContent='center'
-            display='flex'
-            flexWrap='wrap'
-            flexDirection='column'
-            alignItems='center'
-            gap='0px'
-            fontSizeDesktopL='2em'
-            fontSizeLaptopL='1em'
-            fontSizeLaptop='0.9em'
-            fontSizeTablet='0.7em'
-            fontSizeMobileL='0.7em'
-            fontSizeMobileM='0.7em'
-            fontSizeMobileS='0.7em'
-            marginDesktopL='30px 0px 40px 0px'
-            marginLaptopL='0px 40px 0px 40px'
-            marginLaptop='0px 20px 0px 20px'
-          >
-            <SiTailwindcss className='icon' size={'3em'} />
-            <Text
-              color='#393E41'
-              margin='0px 0px 0px 0px'
-              textAlign='center'
-              fontSizeDesktopL='25px'
-              fontSizeLaptop='15px'
-            >
-             Tailwindcss
-            </Text>
-          </ContainerStyle>
-          <ContainerStyle
-            justifyContent='center'
-            display='flex'
-            flexWrap='wrap'
-            flexDirection='column'
-            alignItems='center'
-            gap='0px'
-            fontSizeDesktopL='2em'
-            fontSizeLaptopL='1em'
-            fontSizeLaptop='0.9em'
-            fontSizeTablet='0.7em'
-            fontSizeMobileL='0.7em'
-            fontSizeMobileM='0.7em'
-            fontSizeMobileS='0.7em'
-            marginDesktopL='30px 0px 40px 0px'
-            marginLaptopL='0px 40px 0px 40px'
-            marginLaptop='0px 20px 0px 20px'
-          >
-            <SiCss3 className='icon' size={'3em'} />
-            <Text
-              color='#393E41'
-              margin='0px 0px 0px 0px'
-              textAlign='center'
-              fontSizeDesktopL='25px'
-              fontSizeLaptop='15px'
-            >
-              CSS
-            </Text>
-          </ContainerStyle>
-          <ContainerStyle
-            justifyContent='center'
-            display='flex'
-            flexWrap='wrap'
-            flexDirection='column'
-            alignItems='center'
-            gap='0px'
-            fontSizeDesktopL='2em'
-            fontSizeLaptopL='1em'
-            fontSizeLaptop='0.9em'
-            fontSizeTablet='0.7em'
-            fontSizeMobileL='0.7em'
-            fontSizeMobileM='0.7em'
-            fontSizeMobileS='0.7em'
-            marginDesktopL='30px 0px 40px 0px'
-            marginLaptopL='0px 40px 0px 40px'
-            marginLaptop='0px 20px 0px 20px'
-          >
-            <SiJavascript className='icon' size={'3em'} />
-            <Text
-              color='#393E41'
-              margin='0px 0px 0px 0px'
-              textAlign='center'
-              fontSizeDesktopL='25px'
-              fontSizeLaptop='15px'
-            >
-              JavaScript
-            </Text>
-          </ContainerStyle>
-          <ContainerStyle
-            justifyContent='center'
-            display='flex'
-            flexWrap='wrap'
-            flexDirection='column'
-            alignItems='center'
-            gap='0px'
-            fontSizeDesktopL='2em'
-            fontSizeLaptopL='1em'
-            fontSizeLaptop='0.9em'
-            fontSizeTablet='0.7em'
-            fontSizeMobileL='0.7em'
-            fontSizeMobileM='0.7em'
-            fontSizeMobileS='0.7em'
-            marginDesktopL='30px 0px 40px 0px'
-            marginLaptopL='0px 40px 0px 40px'
-            marginLaptop='0px 20px 0px 20px'
-          >
-            <SiReact className='icon' size={'3em'} />
-            <Text
-              color='#393E41'
-              margin='0px 0px 0px 0px'
-              textAlign='center'
-              fontSizeDesktopL='25px'
-              fontSizeLaptop='15px'
-            >
-              React
-            </Text>
-          </ContainerStyle>
-          <ContainerStyle
-            justifyContent='center'
-            display='flex'
-            flexWrap='wrap'
-            flexDirection='column'
-            alignItems='center'
-            gap='0px'
-            fontSizeDesktopL='2em'
-            fontSizeLaptopL='1em'
-            fontSizeLaptop='0.9em'
-            fontSizeTablet='0.7em'
-            fontSizeMobileL='0.7em'
-            fontSizeMobileM='0.7em'
-            fontSizeMobileS='0.7em'
-            marginDesktopL='30px 0px 40px 0px'
-            marginLaptopL='0px 40px 0px 40px'
-            marginLaptop='0px 20px 0px 20px'
-          >
-            <SiBootstrap className='icon' size={'3em'} />
-            <Text
-              color='#393E41'
-              margin='0px 0px 0px 0px'
-              textAlign='center'
-              fontSizeDesktopL='25px'
-              fontSizeLaptop='15px'
-            >
-              Bootstrap
-            </Text>
-          </ContainerStyle>
-          <ContainerStyle
-            justifyContent='center'
-            display='flex'
-            flexWrap='wrap'
-            flexDirection='column'
-            alignItems='center'
-            gap='0px'
-            fontSizeDesktopL='2em'
-            fontSizeLaptopL='1em'
-            fontSizeLaptop='0.9em'
-            fontSizeTablet='0.7em'
-            fontSizeMobileL='0.7em'
-            fontSizeMobileM='0.7em'
-            fontSizeMobileS='0.7em'
-            marginDesktopL='30px 0px 40px 0px'
-            marginLaptopL='0px 40px 0px 40px'
-            marginLaptop='0px 20px 0px 20px'
-          >
-            <SiStyledcomponents className='icon' size={'3em'} />
-            <Text
-              color='#393E41'
-              margin='0px 0px 0px 0px'
-              textAlign='center'
-              fontSizeDesktopL='25px'
-              fontSizeLaptop='15px'
-            >
-              Style <br /> Components
-            </Text>
-          </ContainerStyle>
-          <ContainerStyle
-            justifyContent='center'
-            display='flex'
-            flexWrap='wrap'
-            flexDirection='column'
-            alignItems='center'
-            gap='0px'
-            fontSizeDesktopL='2em'
-            fontSizeLaptopL='1em'
-            fontSizeLaptop='0.9em'
-            fontSizeTablet='0.7em'
-            fontSizeMobileL='0.7em'
-            fontSizeMobileM='0.7em'
-            fontSizeMobileS='0.7em'
-            marginDesktopL='30px 0px 40px 0px'
-            marginLaptopL='0px 40px 0px 40px'
-            marginLaptop='0px 20px 0px 20px'
-          >
-            <SiNodedotjs className='icon' size={'3em'} />
-            <Text
-              color='#393E41'
-              margin='0px 0px 0px 0px'
-              textAlign='center'
-              fontSizeDesktopL='25px'
-              fontSizeLaptop='15px'
-            >
-              NodeJS
-            </Text>
-          </ContainerStyle>
-          <ContainerStyle
-            justifyContent='center'
-            display='flex'
-            flexWrap='wrap'
-            flexDirection='column'
-            alignItems='center'
-            gap='0px'
-            fontSizeDesktopL='2em'
-            fontSizeLaptopL='1em'
-            fontSizeLaptop='0.9em'
-            fontSizeTablet='0.7em'
-            fontSizeMobileL='0.7em'
-            fontSizeMobileM='0.7em'
-            fontSizeMobileS='0.7em'
-            marginDesktopL='30px 0px 40px 0px'
-            marginLaptopL='0px 40px 0px 40px'
-            marginLaptop='0px 20px 0px 20px'
-          >
-            <SiMongodb className='icon' size={'3em'} />
-            <Text
-              color='#393E41'
-              margin='0px 0px 0px 0px'
-              textAlign='center'
-              fontSizeDesktopL='25px'
-              fontSizeLaptop='15px'
-            >
-              MongoDB
-            </Text>
-          </ContainerStyle>
-          <ContainerStyle
-            justifyContent='center'
-            display='flex'
-            flexWrap='wrap'
-            flexDirection='column'
-            alignItems='center'
-            gap='0px'
-            fontSizeDesktopL='2em'
-            fontSizeLaptopL='1em'
-            fontSizeLaptop='0.9em'
-            fontSizeTablet='0.7em'
-            fontSizeMobileL='0.7em'
-            fontSizeMobileM='0.6em'
-            fontSizeMobileS='0.7em'
-            marginDesktopL='30px 0px 40px 0px'
-            marginLaptopL='0px 40px 0px 40px'
-            marginLaptop='0px 20px 0px 20px'
-          >
-            <SiNextdotjs className='icon' size={'3em'} />
-            <Text
-              color='#393E41'
-              margin='0px 0px 0px 0px'
-              textAlign='center'
-              fontSizeDesktopL='25px'
-              fontSizeLaptop='15px'
-            >
-              NextJS
-            </Text>
-          </ContainerStyle>
+              <Icon className='icon' size={'3em'} />
+              <Text
+                color='#393E41'
+                margin='0px 0px 0px 0px'
+                textAlign='center'
+                fontSizeDesktopL='25px'
+                fontSizeLaptop='15px'
+              >
+                {label}
+              </Text>
+            </ContainerStyle>
+          ))}
         </ContainerStyle>
       </ContainerStyle>
     </Container>

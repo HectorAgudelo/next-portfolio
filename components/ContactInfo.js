@@ -314,7 +314,7 @@ const ContactInfo = forwardRef((props, ref) => {
         gapMobileS='20px'
       >
         <a
-          href='https://www.linkedin.com/in/hector-agudelo-34aa62119/'
+          href='https://www.linkedin.com/in/hector-agudelo-dev/'
           rel='noreferrer'
           target='_blank'
         >

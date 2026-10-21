@@ -1,6 +1,5 @@
 import React, { forwardRef } from 'react';
 import { Container } from 'react-bootstrap';
-import Typewriter from 'typewriter-effect';
 import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs';
 import style from './HomeComp.module.css';
 import { Section } from '../GlobalComponents/Section';
@@ -51,19 +50,7 @@ const HomeComp = forwardRef((props, ref) => {
          marginLaptopL='4px 200px'
          marginDesktopL='4px 400px'
         >
-          I am a
-          <Typewriter
-            className={style.Typewriter__wrapper}
-            options={{
-              strings: [
-                'Frontend Developer',
-                'Software Engineer',
-                'Software Developer',
-              ],
-              autoStart: true,
-              loop: true,
-            }}
-          />
+          Frontend Software Engineer · React, React Native, TypeScript
         </TextHome>
         <ContainerStyle
           display='flex'
@@ -85,7 +72,7 @@ const HomeComp = forwardRef((props, ref) => {
         >
           <a
             className={style.a}
-            href='https://www.linkedin.com/in/hector-agudelo-34aa62119/'
+            href='https://www.linkedin.com/in/hector-agudelo-dev/'
             rel='noreferrer'
             target='_blank'
           >

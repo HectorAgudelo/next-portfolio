@@ -310,52 +310,14 @@ const ProjectModalContainer = forwardRef((props, ref) => {
         gapMobileS='15px'
       >
         <ProjectModalRender
-          img={'/A.png'}
-          tittle={'Restaurant Website'}
-          description={'A restaurant website with menu information, a gallery showing food plates, and important links to other relevant information related to reservations and online ordering.'}
-          codeButton={
-            <Button
-              variant='light'
-              className={`${style.customColor} w-25`}
-              href='https://github.com/HectorAgudelo/AntidoteRestaurant.git'
-              target='_blank'
-              rel='noreferrer noopener'
-            >
-              Code
-            </Button>
-          }
-          appButton={
-            <Button
-              variant='light'
-              className={`${style.customColor} w-25 mx-2`}
-              href='https://restaurant-22fszzy1r-hectoragudelo.vercel.app/'
-              target='_blank'
-              rel='noreferrer noopener'
-            >
-              App
-            </Button>
-          }
-        />
-        <ProjectModalRender
-          img={'/ChatRoom.png'}
-          tittle={'Chat App'}
-          description={'A chat application consisting on three different chat rooms. The app stores the most recent conversations, and notify users when a user enters or leaves the chat.'}
-          codeButton={
-            <Button
-              variant='light'
-              className={`${style.customColor} w-25`}
-              href='https://github.com/HectorAgudelo/ChatRoom.git'
-              target='_blank'
-              rel='noreferrer noopener'
-            >
-              Code
-            </Button>
-          }
+          img={'/flowfit.png'}
+          tittle={'FlowFit · React Native app (in progress)'}
+          description={'A mobile workout app that suggests equivalent exercise swaps when a machine is busy. I am the sole developer, working with a product owner. Built so far: Expo + TypeScript setup, a token-based design system, and 11 reusable UI components, including an animated rest timer. Code is private; screens shown are from the app designs.'}
         />
         <ProjectModalRender
           img={'/handyWork.png'}
-          tittle={'Work Order System'}
-          description={'A web app that allows users to look for or provide services according the user needs or skills. Create an account and start looking for a service provider or provide a service.  '}
+          tittle={'Handy Work · Chingu team project'}
+          description={'A full-stack app that connects people with local service providers. Built with a remote Chingu team in a six-week sprint. I worked on authenticated user profiles and the negotiation flow between consumers and suppliers.'}
           codeButton={
             <Button
               variant='light'
@@ -376,6 +338,22 @@ const ProjectModalContainer = forwardRef((props, ref) => {
               rel='noreferrer noopener'
             >
               App
+            </Button>
+          }
+        />
+        <ProjectModalRender
+          img={'/ChatRoom.png'}
+          tittle={'Chat App'}
+          description={'A chat app with three chat rooms. It stores the most recent conversations and notifies users when someone enters or leaves a room.'}
+          codeButton={
+            <Button
+              variant='light'
+              className={`${style.customColor} w-25`}
+              href='https://github.com/HectorAgudelo/ChatRoom.git'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              Code
             </Button>
           }
         />
