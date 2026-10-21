@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import { Container } from 'react-bootstrap';
-import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs';
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import style from './HomeComp.module.css';
 import { Section } from '../GlobalComponents/Section';
 import { ContainerStyle } from '../GlobalComponents/ContainerStyle';
@@ -85,14 +85,6 @@ const HomeComp = forwardRef((props, ref) => {
             target='_blank'
           >
             <BsGithub className={style.icon} size={'1.5em'} />
-          </a>
-          <a
-            className={style.a}
-            href='https://twitter.com/DevAgudelo'
-            rel='noreferrer'
-            target='_blank'
-          >
-            <BsTwitter className={style.icon} size={'1.5em'} />
           </a>
         </ContainerStyle>
       </Section>
