@@ -32,7 +32,7 @@ window.addEventListener('scroll', changeBackground);
       <Container>
         <Navbar.Brand
           className={style.navText}
-          href='#home'
+          href='#Home'
           onClick={props.home}
         >
           Hector Agudelo

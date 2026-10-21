@@ -32,12 +32,12 @@ export default function Home() {
         projects={() => scrollDown(projects)}
         contact={() => scrollDown(contact)}
       />
-      <HomeComp ref={home} />
-      <About ref={about} />
-      <Experience ref={experience} />
+      <HomeComp id='Home' ref={home} />
+      <About id='About' ref={about} />
+      <Experience id='Experience' ref={experience} />
       {/* <Skills /> */}
-      <ProjectModalContainer ref={projects} />
-      <ContactInfo ref={contact} />
+      <ProjectModalContainer id='Projects' ref={projects} />
+      <ContactInfo id='Contact' ref={contact} />
     </div>
   );
 }
