@@ -298,16 +298,16 @@ const ProjectModalContainer = forwardRef((props, ref) => {
         Check out my most recent projects below and on <a className={style.a} href='https://github.com/HectorAgudelo' target='_blank' rel='noreferrer noopener'>GitHub</a>.
         </Text>
       </Section>
-      <ContainerStyle
-        flexDirection='row'
-        alignItems='center'
-        gapDesktopL='60px'
-        gapLaptopL='30px'
-        gapLaptop='20px'
-        gapTablet='10px'
-        gapMobileL='10px'
-        gapMobileM='10px'
-        gapMobileS='15px'
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(22rem, 100%), 22rem))',
+          gridAutoRows: '1fr',
+          justifyContent: 'center',
+          gap: '30px',
+          width: '100%',
+          padding: '20px 16px 40px',
+        }}
       >
         <ProjectModalRender
           img={'https://pleyr.com/default_meta.jpg?v=20251006'}
@@ -316,7 +316,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
           appButton={
             <Button
               variant='light'
-              className={`${style.customColor} w-25`}
+              className={`${style.customColor} px-4`}
               href='https://www.pleyr.com/'
               target='_blank'
               rel='noreferrer noopener'
@@ -337,7 +337,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
           codeButton={
             <Button
               variant='light'
-              className={`${style.customColor} w-25`}
+              className={`${style.customColor} px-4`}
               href='https://github.com/chingu-voyages/v41-geckos-team-08'
               target='_blank'
               rel='noreferrer noopener'
@@ -348,7 +348,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
           appButton={
             <Button
               variant='light'
-              className={`${style.customColor} w-25 mx-2`}
+              className={`${style.customColor} px-4`}
               href='https://handywork-clients.netlify.app/'
               target='_blank'
               rel='noreferrer noopener'
@@ -357,7 +357,7 @@ const ProjectModalContainer = forwardRef((props, ref) => {
             </Button>
           }
         />
-      </ContainerStyle>
+      </div>
     </Section>
    </Container>
     
