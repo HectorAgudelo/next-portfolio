@@ -357,22 +357,6 @@ const ProjectModalContainer = forwardRef((props, ref) => {
             </Button>
           }
         />
-        <ProjectModalRender
-          img={'/ChatRoom.png'}
-          tittle={'Chat App'}
-          description={'A chat app with three chat rooms. It stores the most recent conversations and notifies users when someone enters or leaves a room.'}
-          codeButton={
-            <Button
-              variant='light'
-              className={`${style.customColor} w-25`}
-              href='https://github.com/HectorAgudelo/ChatRoom.git'
-              target='_blank'
-              rel='noreferrer noopener'
-            >
-              Code
-            </Button>
-          }
-        />
       </ContainerStyle>
     </Section>
    </Container>
