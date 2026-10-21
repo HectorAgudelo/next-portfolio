@@ -310,6 +310,22 @@ const ProjectModalContainer = forwardRef((props, ref) => {
         gapMobileS='15px'
       >
         <ProjectModalRender
+          img={'https://pleyr.com/default_meta.jpg?v=20251006'}
+          tittle={'Pleyr (AthletiFi) · Professional work'}
+          description={'A social platform where youth athletes build player profiles, clip highlights from their team video vault, and share trading-card style Pleyr Cards. I contributed to the Highlight Clipper, Digital Player Cards, the Athlete-First Feed and the streaks and badges layer, using Next.js and TypeScript, plus the AWS S3 setup for match videos. Code is private.'}
+          appButton={
+            <Button
+              variant='light'
+              className={`${style.customColor} w-25`}
+              href='https://www.pleyr.com/'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              Live site
+            </Button>
+          }
+        />
+        <ProjectModalRender
           img={'/flowfit.png'}
           tittle={'FlowFit · React Native app (in progress)'}
           description={'A mobile workout app that suggests equivalent exercise swaps when a machine is busy. I am the sole developer, working with a product owner. Built so far: Expo + TypeScript setup, a token-based design system, and 11 reusable UI components, including an animated rest timer. Code is private; screens shown are from the app designs.'}
