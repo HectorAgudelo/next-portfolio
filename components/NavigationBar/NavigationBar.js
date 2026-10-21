@@ -32,7 +32,7 @@ window.addEventListener('scroll', changeBackground);
       <Container>
         <Navbar.Brand
           className={style.navText}
-          href='#home'
+          href='#Home'
           onClick={props.home}
         >
           Hector Agudelo
@@ -59,6 +59,13 @@ window.addEventListener('scroll', changeBackground);
               onClick={props.about}
             >
               About
+            </Nav.Link>
+            <Nav.Link
+              className={style.navText}
+              href='#Experience'
+              onClick={props.experience}
+            >
+              Experience
             </Nav.Link>
             <Nav.Link
               className={style.navText}

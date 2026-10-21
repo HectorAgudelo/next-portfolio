@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import { Container } from 'react-bootstrap';
 import styles from 'styled-components';
-import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs';
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { device } from './DeviceScreens';
 
 const Section = styles.section`
@@ -314,7 +314,7 @@ const ContactInfo = forwardRef((props, ref) => {
         gapMobileS='20px'
       >
         <a
-          href='https://www.linkedin.com/in/hector-agudelo-34aa62119/'
+          href='https://www.linkedin.com/in/hector-agudelo-dev/'
           rel='noreferrer'
           target='_blank'
         >
@@ -330,17 +330,6 @@ const ContactInfo = forwardRef((props, ref) => {
           target='_blank'
         >
           <BsGithub
-            style={{ color: '#d3d0cb' }}
-            className='icon'
-            size={'1.5em'}
-          />
-        </a>
-        <a
-          href='https://twitter.com/DevAgudelo'
-          rel='noreferrer'
-          target='_blank'
-        >
-          <BsTwitter
             style={{ color: '#d3d0cb' }}
             className='icon'
             size={'1.5em'}
